@@ -1,73 +1,106 @@
-**Operating Systems**
+Operating Systems
+#################
 
-- CIS
-
+CIS
+***
   - Amazon
 
-    - `2<https://github.com/ansible-lockdown/AMAZON2-CIS>`_.
-  
+    - AMAZON2-CIS_.
+
   - RedHat Enterprise Linux
-  
-    - `6 (no longer maintained)<https://github.com/ansible-lockdown/RHEL6-CIS>`_.
-    - `7<https://github.com/ansible-lockdown/RHEL7-CIS>`_.
-    - `8<https://github.com/ansible-lockdown/RHEL8-CIS>`_.
-    - `9 (WIP)<https://github.com/ansible-lockdown/RHEL-CIS>`_.
-  
+    - RHEL7-CIS_.
+    - RHEL8-CIS_.
+    - RHEL9-CIS_. (WIP) OS not yet releases
+
   - Ubuntu
-  
-    - `18.04<https://github.com/ansible-lockdown/UBUNTU18-CIS>`_.
-    - `20.04<https://github.com/ansible-lockdown/UBUNTU20-CIS>`_.
-  
-  - Windows
-  
-    - `2016<https://github.com/ansible-lockdown/Windows-2016-CIS>`_.
-    - `2019<https://github.com/ansible-lockdown/Windows-2019-CIS>`_.
-    - `2022<https://github.com/ansible-lockdown/Windows-2022-CIS>`_.
 
-- STIG
-  
+    - UBUNTU18-CIS_.
+    - UBUNTU20-CIS_.
+
+  - Windows
+
+    - Windows-2016-CIS_.
+    - Windows-2019-CIS_.
+    - Windows-2022-CIS_.
+
+STIG
+****
+
   - RedHat Enterprise Linux
-  
-    - `7<https://github.com/ansible-lockdown/RHEL7-STIG>`_.
-    - `8<https://github.com/ansible-lockdown/RHEL8-STIG>`_.
-  
+
+    - RHEL7-STIG_.
+    - RHEL8-STIG_.
+
   - Windows
-  
-    - `10<https://github.com/ansible-lockdown/Windows-10-STIG>`_.
-    - `2012-Member<https://github.com/ansible-lockdown/Windows-2012-Member-Server-STIG>`_.
-    - `2012-DomainController<https://github.com/ansible-lockdown/Windows-2012-Domain-Controller-STIG>`_.
-    - `2016<https://github.com/ansible-lockdown/Windows-2016-STIG>`_.
-    - `2019<https://github.com/ansible-lockdown/Windows-2019-STIG>`_.
 
-**Hardware**
+    - Windows-10-STIG10_.
+    - Windows-2012-Member-Server-STIG_.
+    - Windows-2012-Domain-Controller-STIG_.
+    - Windows-2016-STIG_.
+    - Windows-2019-STIG_.
 
-- STIG
-  
+Hardware
+########
+
+STIG
+****
+
   - `Cisco-IOS-L2S<https://github.com/ansible-lockdown/CISCO-IOS-L2S-STIG>`_.
 
-**Platform**
-- CIS
-  
-  - `AWS-Foundations<https://github.com/ansible-lockdown/AWS-FOUNDATIONS-CIS>`_.
-  - `Azure<https://github.com/ansible-lockdown/AZURE-CIS>`_.
+Platform
+########
 
-**Applications**
+CIS
+***
 
-- CIS
-  
+  - AWS-Foundations_.
+  - Azure_.
+
+Applications
+############
+
+CIS
+***
+
   - `Apache 2.4 (Linux)<https://github.com/ansible-lockdown/APACHE-2.4-CIS>`_.
   - `Postgres 12 (Linux)<https://github.com/ansible-lockdown/POSTGRES-12-CIS>`_.
   - `Kubernetes 1.6.1 (Linux)<https://github.com/ansible-lockdown/Kubernetes1.6.1-CIS>`_.
 
-- STIG
-  
+STIG
+****
+
   - `Apache 2.4 (Linux)<https://github.com/ansible-lockdown/APACHE-2.4-STIG>`_.
   - `Postgres 9 (Linux)https://github.com/ansible-lockdown/POSTGRES-9-STIG>`_.
   - `Windows_Advance_Firewall<https://github.com/ansible-lockdown/WinFWADV-STIG>`_.
 
-**Archived(No Longer Maintained)**
-- STIG
-  
+Archived(No Longer Maintained)
+##############################
+
+STIG
+****
+
   - RHEL5
   - RHEL6
   - 2008R2-Member
+
+.. _AMAZON2-CIS: https://github.com/ansible-lockdown/AMAZON2-CIS
+.. _RHEL7-CIS: https://github.com/ansible-lockdown/RHEL7-CIS
+.. _RHEL8-CIS: https://github.com/ansible-lockdown/RHEL8-CIS
+.. _RHEL9-CIS: https://github.com/ansible-lockdown/RHEL9-CIS
+.. _UBUNTU18-CIS: https://github.com/ansible-lockdown/UBUNTU18-CIS
+.. _UBUNTU20-CIS: https://github.com/ansible-lockdown/UBUNTU20-CIS
+
+.. _Windows-2016-CIS: https://github.com/ansible-lockdown/Windows-2016-CIS
+.. _Windows-2019-CIS: https://github.com/ansible-lockdown/Windows-2019-CIS
+.. _Windows-2022-CIS: https://github.com/ansible-lockdown/Windows-2022-CIS
+
+.. _RHEL7-STIG: https://github.com/ansible-lockdown/RHEL7-STIG
+.. _RHEL8-STIG: https://github.com/ansible-lockdown/RHEL8-STIG
+.. _Windows-2012-Member-Server-STIG: https://github.com/ansible-lockdown/Windows-2012-Member-Server-STIG
+.. _Windows-2012-Domain-Controller-STIG: https://github.com/ansible-lockdown/Windows-2012-Domain-Controller-STIG
+.. _Windows-2016-STIG: https://github.com/ansible-lockdown/Windows-2016-STIG
+.. _Windows-2019-STIG: https://github.com/ansible-lockdown/Windows-2019-STIG
+
+.. _Cisco-IOS-L2S: https://github.com/ansible-lockdown/CISCO-IOS-L2S-STIG
+.. _AWS-Foundations: https://github.com/ansible-lockdown/AWS-FOUNDATIONS-CIS
+.. _Azure-CIS: https://github.com/ansible-lockdown/AZURE-CIS

@@ -69,6 +69,7 @@ Documentation is split in the two categories
 .. toctree::
 
    combined.rst
+   
    audit/
        audit.rst
    remediate/

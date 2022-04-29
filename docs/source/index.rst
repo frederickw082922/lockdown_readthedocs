@@ -1,5 +1,5 @@
 ==========================================
-Automated security hardening  with Ansible
+Automated security hardening with Ansible
 ==========================================
 
 What is security hardening?

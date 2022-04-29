@@ -38,3 +38,12 @@ sudo pip3 install -r requirements.txt
 ```bash
 make singlehtml
 ```
+
+## Adding a new benchmark
+
+The file(s) that need to be adjusted are
+
+- source/benchmarks_CIS.rst
+- source/benchmarks_STIG.rst
+
+This autopopulates into the index and anwhere else it is required

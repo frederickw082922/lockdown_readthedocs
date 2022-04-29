@@ -69,7 +69,7 @@ Documentation is split in the two categories
 .. toctree::
 
    combined.rst
-   
+
    audit/
        audit.rst
    remediate/
@@ -77,4 +77,13 @@ Documentation is split in the two categories
 
 Benchmark list
 ------------
-.. include:: benchmarks.rst
+
+CIS Benchmarks
+##############
+
+.. include:: benchmarks_CIS.rst
+
+STIG Benchmarks
+###############
+
+.. include:: benchmarks_STIG.rst

@@ -1,7 +1,9 @@
-Welcome to the documentation for the remediate component
-########################################################
+Remediate Section
+#################
 
 .. toctree::
+
    remediate/
+
      getting_started.rst
      faqs.rst

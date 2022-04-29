@@ -55,7 +55,7 @@ CIS
 ***
 
   - AWS-Foundations_
-  - Azure_
+  - Azure-CIS_
 
 Applications
 ############
@@ -72,7 +72,7 @@ STIG
 
   - Apache-2.4-STIG_
   - Postgres-9-STIG_
-  - Windows_Advance_Firewall_
+  - Windows_Advance_Firewall-STIG_
 
 Archived(No Longer Maintained)
 ##############################
@@ -111,5 +111,5 @@ STIG
 .. _Kubernetes1.6.1-CIS: https://github.com/ansible-lockdown/Kubernetes1.6.1-CIS
 
 .. _Apache-2.4-STIG: https://github.com/ansible-lockdown/APACHE-2.4-STIG
-.. _Postgres-STIG9: https://github.com/ansible-lockdown/POSTGRES-9-STIG
+.. _Postgres-9-STIG: https://github.com/ansible-lockdown/POSTGRES-9-STIG
 .. _Windows_Advance_Firewall-STIG: https://github.com/ansible-lockdown/WinFWADV-STIG

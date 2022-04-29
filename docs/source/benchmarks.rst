@@ -5,39 +5,40 @@ CIS
 ***
   - Amazon
 
-    - AMAZON2-CIS_.
+    - AMAZON2-CIS_
 
   - RedHat Enterprise Linux
-    - RHEL7-CIS_.
-    - RHEL8-CIS_.
-    - RHEL9-CIS_. (WIP) OS not yet releases
+
+    - RHEL7-CIS_
+    - RHEL8-CIS_
+    - RHEL9-CIS_ (WIP) OS not yet releases
 
   - Ubuntu
 
-    - UBUNTU18-CIS_.
-    - UBUNTU20-CIS_.
+    - UBUNTU18-CIS_
+    - UBUNTU20-CIS_
 
   - Windows
 
-    - Windows-2016-CIS_.
-    - Windows-2019-CIS_.
-    - Windows-2022-CIS_.
+    - Windows-2016-CIS_
+    - Windows-2019-CIS_
+    - Windows-2022-CIS_
 
 STIG
 ****
 
   - RedHat Enterprise Linux
 
-    - RHEL7-STIG_.
-    - RHEL8-STIG_.
+    - RHEL7-STIG_
+    - RHEL8-STIG_
 
   - Windows
 
-    - Windows-10-STIG10_.
-    - Windows-2012-Member-Server-STIG_.
-    - Windows-2012-Domain-Controller-STIG_.
-    - Windows-2016-STIG_.
-    - Windows-2019-STIG_.
+    - Windows-10-STIG10_
+    - Windows-2012-Member-Server-STIG_
+    - Windows-2012-Domain-Controller-STIG_
+    - Windows-2016-STIG_
+    - Windows-2019-STIG_
 
 Hardware
 ########
@@ -45,7 +46,7 @@ Hardware
 STIG
 ****
 
-  - `Cisco-IOS-L2S<https://github.com/ansible-lockdown/CISCO-IOS-L2S-STIG>`_.
+  - Cisco-IOS-L2S_
 
 Platform
 ########
@@ -53,8 +54,8 @@ Platform
 CIS
 ***
 
-  - AWS-Foundations_.
-  - Azure_.
+  - AWS-Foundations_
+  - Azure_
 
 Applications
 ############
@@ -62,16 +63,16 @@ Applications
 CIS
 ***
 
-  - `Apache 2.4 (Linux)<https://github.com/ansible-lockdown/APACHE-2.4-CIS>`_.
-  - `Postgres 12 (Linux)<https://github.com/ansible-lockdown/POSTGRES-12-CIS>`_.
-  - `Kubernetes 1.6.1 (Linux)<https://github.com/ansible-lockdown/Kubernetes1.6.1-CIS>`_.
+  - Apache-2.4-CIS_
+  - Postgres-12-CIS_
+  - Kubernetes1.6.1-CIS_
 
 STIG
 ****
 
-  - `Apache 2.4 (Linux)<https://github.com/ansible-lockdown/APACHE-2.4-STIG>`_.
-  - `Postgres 9 (Linux)https://github.com/ansible-lockdown/POSTGRES-9-STIG>`_.
-  - `Windows_Advance_Firewall<https://github.com/ansible-lockdown/WinFWADV-STIG>`_.
+  - Apache-2.4-STIG_
+  - Postgres-9-STIG_
+  - Windows_Advance_Firewall_
 
 Archived(No Longer Maintained)
 ##############################
@@ -104,3 +105,11 @@ STIG
 .. _Cisco-IOS-L2S: https://github.com/ansible-lockdown/CISCO-IOS-L2S-STIG
 .. _AWS-Foundations: https://github.com/ansible-lockdown/AWS-FOUNDATIONS-CIS
 .. _Azure-CIS: https://github.com/ansible-lockdown/AZURE-CIS
+
+.. _Apache-2.4-CIS: https://github.com/ansible-lockdown/APACHE-2.4-CIS
+.. _Postgres-12-CIS: https://github.com/ansible-lockdown/POSTGRES-12-CIS
+.. _Kubernetes1.6.1-CIS: https://github.com/ansible-lockdown/Kubernetes1.6.1-CIS
+
+.. _Apache-2.4-STIG: https://github.com/ansible-lockdown/APACHE-2.4-STIG
+.. _Postgres-STIG9: https://github.com/ansible-lockdown/POSTGRES-9-STIG
+.. _Windows_Advance_Firewall-STIG: https://github.com/ansible-lockdown/WinFWADV-STIG

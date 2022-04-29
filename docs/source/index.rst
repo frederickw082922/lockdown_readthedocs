@@ -75,6 +75,6 @@ Documentation is split in the two categories
    remediate/
        remediate.rst
 
-Content list
+Benchmark list
 ------------
 .. include:: benchmarks.rst

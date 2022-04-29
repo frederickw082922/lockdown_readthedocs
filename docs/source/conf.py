@@ -84,7 +84,7 @@ author = 'MindPoint Group'
 category = 'Security'
 copyright = '2022, MindPoint Group'
 description = BENCHMARK_TYPE + " " + 'compliance for' + " " + BENCHMARK_OS_SHORT + " " + 'systems'
-project = 'Ansible-lockdown ' + BENCHMARK_NAME
+project = 'Ansible-lockdown '
 role_name = BENCHMARK_NAME
 target_name = BENCHMARK_NAME
 title = 'Ansible-Lockdown' + BENCHMARK_NAME +  'Documentation:'
@@ -92,15 +92,6 @@ title = 'Ansible-Lockdown' + BENCHMARK_NAME +  'Documentation:'
 # Added to variables.rst
 
 rst_prolog ="\n.. include:: .variables.rst\n"
-#rst_prolog = """
-#.. |benchmark_name| replace:: +BENCHMARK_TYPE
-#.. |benchmark_os| replace:: +BENCHMARK_OS
-#.. |benchmark_os_short| replace:: +BENCHMARK_OS_SHORT
-#.. |benchmark_version| replace:: +BENCHMARK_VERSION
-#.. |benchmark_release_date| replace:: +BENCHMARK_REL_DATE
-#.. |lockdown_url| replace:: +LOCKDOWN_URL
-#.. |tested_oss| replace:: +TESTED_OS
-#"""
 
 # The version info for the project you're documenting, acts as replacement for
 # |mindpointversion| and |release|, also used in various other places throughout the

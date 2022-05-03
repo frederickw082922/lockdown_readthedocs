@@ -9,7 +9,8 @@ The content delivered is based upon either one of the two major contributors to 
 
 - Center for Internet Security (CIS): https://www.cisecurity.org/cis-benchmarks/
 
-  - A global IT community of experts helping to build, document sets of benchmarks to produce industry best security practices
+  - A global IT community of experts helping to build, document sets of benchmarks to produce industry best security practices. 
+    CIS Benchmarks are vendor agnostic, consensus-based security configuration guides both developed and accepted by government, business, industry, and academia.
 
 or
 

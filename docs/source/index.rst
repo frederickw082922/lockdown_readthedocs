@@ -72,6 +72,14 @@ What do the roles do?
   - Assists in bringing your host into compliance for the relevant benchmark
 
 
+.. figure:: _static/simple_workflow.png
+   :height: 100px
+   :width: 400px
+   :align: center
+   :alt: Simple Process Workflow
+   :figclass: align-center
+   Simple workflow of what can be achieved
+
 How is this written?
 ------------------
 

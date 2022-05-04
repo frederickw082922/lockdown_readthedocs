@@ -72,10 +72,11 @@ Documentation is split in the two categories
 
     combined.rst
 
-    audit/
-      audit.rst
-    remediate/
-      remediate.rst
+    audit.rst
+    remediate.rst
+
+.. include:: audit.rst
+.. include:: remediate.rst
 
 Benchmark list
 ------------

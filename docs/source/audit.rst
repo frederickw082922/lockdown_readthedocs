@@ -1,9 +1,9 @@
-Audit Section
-#############
+Audit Overview
+##############
 
 .. toctree::
-    :maxdepth: 2
+   :maxdepth: 2
 
-    audit/
-      getting_started.rst
-      faqs.rst
+   audit/
+     <getting_started> with audit
+     <faqs>

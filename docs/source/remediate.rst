@@ -1,5 +1,5 @@
-Remediate Section
-#################
+Remediate Overview
+##################
 
 .. toctree::
     :maxdepth: 2

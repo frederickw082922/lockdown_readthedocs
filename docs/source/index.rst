@@ -5,7 +5,7 @@ Automated security hardening
 Why should this role be applied to a system?
 --------------------------------------------
 
-There are three main reasons to apply this role to production Linux systems:
+There are three main reasons to apply this role to systems:
 
 - Improve security posture
   The configurations from the |benchmark_name| add security and rigor around multiple
@@ -16,7 +16,7 @@ There are three main reasons to apply this role to production Linux systems:
 
 - Meet compliance requirements
   Some deployers may be subject to industry compliance programs, such as
-  PCI-DSS, ISO 27001/27002, or NIST 800-53. Many of these programs require
+  PCI-DSS, HIPAA, ISO 27001/27002, or NIST 800-53. Many of these programs require
   hardening standards to be applied to systems.
 
 - Deployment without disruption
@@ -72,7 +72,7 @@ What do the roles do?
   - Assists in bringing your host into compliance for the relevant benchmark
 
 
-How do we do this?
+How is this written?
 ------------------
 
 We analyze each configuration control from the applicable benchmark to determine what impact it has on a live production environment and how to
@@ -85,6 +85,10 @@ Every control item has an associated variable that can be used to switch it on o
 Additionally, the items that have configurable values, i.e. number of password attempts, will generally have a corresponding variable that allows for customization of the applied value.
 It is imperative for each deployer to understand the regulations and compliance requirements that their organization and specific environments are responsible for meeting in order to effeectively implement the controls in the relevant benchmark.
 
+How can i use it?
+-----------------
+
+.. include:: documention.rst
 
 
 Benchmark list

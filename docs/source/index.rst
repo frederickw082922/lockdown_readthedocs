@@ -2,7 +2,29 @@
 Automated security hardening
 ============================
 
-.. toctree::
+Why should this role be applied to a system?
+--------------------------------------------
+
+There are three main reasons to apply this role to production Linux systems:
+
+- Improve security posture
+  The configurations from the |benchmark_name| add security and rigor around multiple
+  components of an operating system, including user authentication, service
+  configurations, and package management. All of these configurations add up
+  to an environment that is more difficult for an attacker to penetrate and use
+  for lateral movement.
+
+- Meet compliance requirements
+  Some deployers may be subject to industry compliance programs, such as
+  PCI-DSS, ISO 27001/27002, or NIST 800-53. Many of these programs require
+  hardening standards to be applied to systems.
+
+- Deployment without disruption
+  Security is often at odds with usability. The role provides the greatest
+  security benefit without disrupting production systems. Deployers have the
+  option to opt out or opt in for most configurations depending on how their
+  environments are configured.
+
 
 What is security hardening?
 ---------------------------
@@ -63,13 +85,6 @@ Every control item has an associated variable that can be used to switch it on o
 Additionally, the items that have configurable values, i.e. number of password attempts, will generally have a corresponding variable that allows for customization of the applied value.
 It is imperative for each deployer to understand the regulations and compliance requirements that their organization and specific environments are responsible for meeting in order to effeectively implement the controls in the relevant benchmark.
 
-
-Documentation
--------------
-
-.. include:: audit.rst
-.. include:: remediate.rst
-.. include:: combined.rst
 
 
 Benchmark list

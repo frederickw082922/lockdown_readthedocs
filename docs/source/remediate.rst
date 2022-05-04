@@ -4,5 +4,5 @@ Remediate
 
 
 .. toctree::
-   remediate/getting_started.rst
+   remediate/getting-started.rst
    remediate/faqs.rst

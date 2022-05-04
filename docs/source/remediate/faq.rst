@@ -1,5 +1,5 @@
-FAQ
-===
+Remediate - FAQ
+===============
 
 Does this role work only with |benchmark_os_short|?
 -----------------------------------------------------

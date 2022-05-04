@@ -1,5 +1,5 @@
-FAQ
-===
+Audit - FAQ
+===========
 
 Does this role work only with |benchmark_os_short|?
 -----------------------------------------------------
@@ -13,8 +13,7 @@ and may run afoul of your organization or regulatory bodies guidelines during a 
 audit. It is on YOU to understand your organizations requirements and the laws and regulations
 you must adhere to before applying this role.
 
-See :ref:`system_applicability_ref_label` below for more details on applying this role to non-RedHat EL 7
-or CentOS 7 systems.
+See :ref:`system_applicability_ref_label` below for more details.
 
 Why should this role be applied to a system?
 --------------------------------------------
@@ -23,7 +22,7 @@ There are three main reasons to apply this role to production Linux systems:
 
 Improve security posture
   The configurations from the |benchmark_name| add security and rigor around multiple
-  components of a Linux system, including user authentication, service
+  components of an operating system, including user authentication, service
   configurations, and package management. All of these configurations add up
   to an environment that is more difficult for an attacker to penetrate and use
   for lateral movement.
@@ -45,7 +44,7 @@ Which systems are covered?
 --------------------------------------------------------
 
 This role and the |benchmark_name| guidance it implements are fully applicable to servers
-(physical or virtual) and containers running the following Linux distributions:
+(physical or virtual) and containers running the following distributions:
 
 * |benchmark_os|
 

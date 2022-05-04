@@ -4,5 +4,5 @@ Audit
 
 .. toctree::
 
-   audit/getting_started.rst
+   audit/getting-started.rst
    audit/faq.rst

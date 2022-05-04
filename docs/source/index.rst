@@ -1,6 +1,8 @@
-==========================================
-Automated security hardening with Ansible
-==========================================
+============================
+Automated security hardening
+============================
+
+.. toctree::
 
 What is security hardening?
 ---------------------------
@@ -65,17 +67,9 @@ It is imperative for each deployer to understand the regulations and compliance 
 Documentation
 -------------
 
-Documentation is split in the two categories
-
 .. include:: audit.rst
 .. include:: remediate.rst
 .. include:: combined.rst
-
-TOC..
-
-.. toctree::
-   audit/*
-   remediate/*
 
 
 Benchmark list

@@ -95,7 +95,7 @@ How can i use it?
 .. include:: documention.rst
 
 Benchmark list
---------------
+==============
 
 CIS Benchmarks
 ^^^^^^^^^^^^^^

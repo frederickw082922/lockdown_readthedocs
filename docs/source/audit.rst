@@ -1,5 +1,6 @@
+==============
 Audit Overview
-##############
+==============
 
 .. toctree::
    :maxdepth: 2

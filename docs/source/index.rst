@@ -67,16 +67,16 @@ Documentation
 
 Documentation is split in the two categories
 
-.. toctree::
-    :maxdepth: 2
-
-    combined.rst
-
-    audit.rst
-    remediate.rst
-
 .. include:: audit.rst
 .. include:: remediate.rst
+.. include:: combined.rst
+
+TOC..
+
+.. toctree::
+   audit/*
+   remediate/*
+
 
 Benchmark list
 ------------

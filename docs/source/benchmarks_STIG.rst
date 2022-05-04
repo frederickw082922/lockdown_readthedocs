@@ -1,5 +1,5 @@
 Operating Systems
-*****************
+^^^^^^^^^^^^^^^^^
 
 - RedHat Enterprise Linux
 
@@ -15,12 +15,12 @@ Operating Systems
   - Windows-2019-STIG_
 
 Hardware
-********
+^^^^^^^^
 
 - Cisco-IOS-L2S_
 
 Applications
-************
+^^^^^^^^^^^^
 
 
 - Apache-2.4-STIG_
@@ -28,7 +28,7 @@ Applications
 - Windows_Advance_Firewall-STIG_
 
 Archived(No Longer Maintained)
-******************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - RHEL5
 - RHEL6

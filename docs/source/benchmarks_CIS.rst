@@ -1,5 +1,5 @@
 Operating Systems
-*****************
+^^^^^^^^^^^^^^^^^
 
 - Amazon
 
@@ -23,13 +23,13 @@ Operating Systems
   - Windows-2022-CIS_
 
 Platform
-********
+^^^^^^^^
 
   - AWS-Foundations_
   - Azure-CIS_
 
 Applications
-************
+^^^^^^^^^^^^
 
   - Apache-2.4-CIS_
   - Postgres-12-CIS_
@@ -37,7 +37,7 @@ Applications
 
 
 Archived(No Longer Maintained)
-******************************
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _AMAZON2-CIS: https://github.com/ansible-lockdown/AMAZON2-CIS
 .. _RHEL7-CIS: https://github.com/ansible-lockdown/RHEL7-CIS

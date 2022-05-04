@@ -92,7 +92,7 @@ It is imperative for each deployer to understand the regulations and compliance 
 How can i use it?
 -----------------
 
-.. include:: documention.rst
+.. include:: documentation.rst
 
 Benchmark list
 ==============

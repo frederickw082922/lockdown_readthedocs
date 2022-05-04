@@ -1,6 +1,6 @@
-============================
+****************************
 Automated security hardening
-============================
+****************************
 
 Why should this role be applied to a system?
 --------------------------------------------
@@ -8,22 +8,25 @@ Why should this role be applied to a system?
 There are three main reasons to apply this role to systems:
 
 - Improve security posture
-  The configurations from the |benchmark_name| add security and rigor around multiple
-  components of an operating system, including user authentication, service
-  configurations, and package management. All of these configurations add up
-  to an environment that is more difficult for an attacker to penetrate and use
-  for lateral movement.
+
+    The configurations from the |benchmark_name| add security and rigor around multiple
+    components of an operating system, including user authentication, service
+    configurations, and package management. All of these configurations add up
+    to an environment that is more difficult for an attacker to penetrate and use
+    for lateral movement.
 
 - Meet compliance requirements
-  Some deployers may be subject to industry compliance programs, such as
-  PCI-DSS, HIPAA, ISO 27001/27002, or NIST 800-53. Many of these programs require
-  hardening standards to be applied to systems.
+
+    Some deployers may be subject to industry compliance programs, such as
+    PCI-DSS, HIPAA, ISO 27001/27002, or NIST 800-53. Many of these programs require
+    hardening standards to be applied to systems.
 
 - Deployment without disruption
-  Security is often at odds with usability. The role provides the greatest
-  security benefit without disrupting production systems. Deployers have the
-  option to opt out or opt in for most configurations depending on how their
-  environments are configured.
+
+    Security is often at odds with usability. The role provides the greatest
+    security benefit without disrupting production systems. Deployers have the
+    option to opt out or opt in for most configurations depending on how their
+    environments are configured.
 
 
 What is security hardening?
@@ -54,14 +57,6 @@ The content provided is open source licensed configurations to assist in achievi
 This consists of two components
 
 - Audit
-- Remediate
-
-Both can be run alone or inconjunction with each other.
-
-What do the roles do?
-----------------------
-
-- Audit
 
   - runs a small single binary on the system written in go called goss: http://goss.rocks
   - enables you to very quickly scan your host and output the status of compliance for your host.
@@ -71,6 +66,7 @@ What do the roles do?
   - Ability to run from a central location using the configuration management tool ansible
   - Assists in bringing your host into compliance for the relevant benchmark
 
+Both can be run alone or inconjunction with each other.
 
 .. figure:: _static/simple_workflow.png
    :height: 100px
@@ -98,16 +94,15 @@ How can i use it?
 
 .. include:: documention.rst
 
-
 Benchmark list
-------------
+--------------
 
 CIS Benchmarks
-##############
+^^^^^^^^^^^^^^
 
 .. include:: benchmarks_CIS.rst
 
 STIG Benchmarks
-###############
+***************
 
 .. include:: benchmarks_STIG.rst

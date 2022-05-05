@@ -1,18 +1,18 @@
-***************
+
 STIG Benchmarks
-***************
+===============
 
 Operating Systems
-=================
+-----------------
 
 RedHat Enterprise Linux
------------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
   - RHEL7-STIG_
   - RHEL8-STIG_
 
 Windows
--------
+^^^^^^^
 
   - Windows-10-STIG10_
   - Windows-2012-Member-Server-STIG_
@@ -21,19 +21,19 @@ Windows
   - Windows-2019-STIG_
 
 Hardware
-========
+--------
 
 - Cisco-IOS-L2S_
 
 Applications
-============
+------------
 
 - Apache-2.4-STIG_
 - Postgres-9-STIG_
 - Windows_Advance_Firewall-STIG_
 
 Archived(No Longer Maintained)
-==============================
+------------------------------
 
 - RHEL5
 - RHEL6

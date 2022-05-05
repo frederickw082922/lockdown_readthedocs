@@ -92,8 +92,9 @@ It is imperative for each deployer to understand the regulations and compliance 
 
 .. include:: documentation.rst
 
-Benchmark list
-==============
+********************
+Available Benchmarks
+********************
 
 .. include:: benchmarks_CIS.rst
 

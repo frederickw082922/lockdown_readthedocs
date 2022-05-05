@@ -1,7 +1,3 @@
-
-STIG Benchmarks
-===============
-
 Operating Systems
 -----------------
 

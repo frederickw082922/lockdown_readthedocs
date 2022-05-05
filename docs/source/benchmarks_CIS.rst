@@ -1,6 +1,3 @@
-CIS Benchmarks
-==============
-
 Operating Systems
 -----------------
 

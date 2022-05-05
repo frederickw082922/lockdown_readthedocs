@@ -96,6 +96,12 @@ It is imperative for each deployer to understand the regulations and compliance 
 Available Benchmarks
 ********************
 
+CIS Benchmarks
+==============
+
 .. include:: benchmarks_CIS.rst
+
+STIG Benchmarks
+===============
 
 .. include:: benchmarks_STIG.rst

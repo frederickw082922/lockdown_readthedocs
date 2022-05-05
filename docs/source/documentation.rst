@@ -2,10 +2,18 @@
 Documentation
 =============
 
-.. toctree::
-   :maxdepth: 2
-   audit/audit-getting-started.rst
-   audit/audit-faq.rst
-   remediate/rem-getting-started.rst
-   remediate/rem-faq.rst
-   combined.rst
+
+Audit
+*****
+.. include::   audit/audit-getting-started.rst
+.. include::   audit/audit-faq.rst
+
+Remediate
+*********
+.. include:: remediate/rem-getting-started.rst
+.. include:: remediate/rem-faq.rst
+
+Complete Workflow
+*****************
+
+.. include:: combined.rst

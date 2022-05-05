@@ -77,7 +77,7 @@ Both can be run alone or inconjunction with each other.
    Simple workflow of what can be achieved
 
 How is this written?
-------------------
+--------------------
 
 We analyze each configuration control from the applicable benchmark to determine what impact it has on a live production environment and how to
 best implement a way to audit the current configuration and how to achieve those requirements using Ansible. 

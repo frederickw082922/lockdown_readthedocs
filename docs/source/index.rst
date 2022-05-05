@@ -89,8 +89,6 @@ Every control item has an associated variable that can be used to switch it on o
 Additionally, the items that have configurable values, i.e. number of password attempts, will generally have a corresponding variable that allows for customization of the applied value.
 It is imperative for each deployer to understand the regulations and compliance requirements that their organization and specific environments are responsible for meeting in order to effeectively implement the controls in the relevant benchmark.
 
-How can i use it?
------------------
 
 .. include:: documentation.rst
 

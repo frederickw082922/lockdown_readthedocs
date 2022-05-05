@@ -1,12 +1,18 @@
-Operating Systems
-^^^^^^^^^^^^^^^^^
+***************
+STIG Benchmarks
+***************
 
-- RedHat Enterprise Linux
+Operating Systems
+=================
+
+RedHat Enterprise Linux
+-----------------------
 
   - RHEL7-STIG_
   - RHEL8-STIG_
 
-- Windows
+Windows
+-------
 
   - Windows-10-STIG10_
   - Windows-2012-Member-Server-STIG_
@@ -15,24 +21,25 @@ Operating Systems
   - Windows-2019-STIG_
 
 Hardware
-^^^^^^^^
+========
 
 - Cisco-IOS-L2S_
 
 Applications
-^^^^^^^^^^^^
-
+============
 
 - Apache-2.4-STIG_
 - Postgres-9-STIG_
 - Windows_Advance_Firewall-STIG_
 
 Archived(No Longer Maintained)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==============================
 
 - RHEL5
 - RHEL6
 - 2008R2-Member
+
+
 
 .. _RHEL7-STIG: https://github.com/ansible-lockdown/RHEL7-STIG
 .. _RHEL8-STIG: https://github.com/ansible-lockdown/RHEL8-STIG

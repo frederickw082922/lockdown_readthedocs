@@ -1,6 +1,6 @@
-
+*************
 Documentation
-=============
+*************
 
 
 Audit
@@ -18,6 +18,6 @@ Remediate
 .. include:: remediate/rem-faq.rst
 
 Complete Workflow
-*****************
+=================
 
 .. include:: combined.rst

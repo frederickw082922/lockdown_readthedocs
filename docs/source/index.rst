@@ -1,6 +1,6 @@
-****************************
-Automated security hardening
-****************************
+********************************************************
+Automated Security Benchmark - Auditing and Remediation
+********************************************************
 
 Why should this role be applied to a system?
 --------------------------------------------
@@ -68,13 +68,12 @@ This consists of two components
 
 Both can be run alone or inconjunction with each other.
 
-.. figure:: _static/simple_workflow.png
+.. image:: _static/simple_workflow.png
    :height: 100px
    :width: 400px
    :align: center
    :alt: Simple Process Workflow
-   :figclass: align-center
-   Simple workflow of what can be achieved
+
 
 How is this written?
 --------------------
@@ -96,8 +95,7 @@ It is imperative for each deployer to understand the regulations and compliance 
 Available Benchmarks
 ********************
 
-CIS Benchmarks
-==============
+
 
 .. include:: benchmarks_CIS.rst
 

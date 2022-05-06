@@ -4,8 +4,8 @@ Audit - FAQ
 Does this role work only with the specified OS?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Linux
-^^^^^
+- Linux
+
 
 The |benchmark_name| guidance is designed to ONLY be applicable to the listed OS
 systems and if you are using this role in a regulated organization you should be aware 
@@ -14,8 +14,8 @@ and may run afoul of your organization or regulatory bodies guidelines during a 
 audit. It is on YOU to understand your organizations requirements and the laws and regulations
 you must adhere to before applying this role.
 
-Windows
-^^^^^^^
+- Windows
+
 
 For Windows based benchmarks these are specific to the generation e.g. 2019. 
 While many controls are the same across these generational releases

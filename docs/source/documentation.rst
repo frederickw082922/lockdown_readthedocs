@@ -2,7 +2,7 @@
 Documentation
 *************
 
------
+
 Audit
 -----
 
@@ -10,7 +10,7 @@ Audit
 
 .. include:: audit/audit-faq.rst
 
----------
+
 Remediate
 ---------
 
@@ -18,7 +18,7 @@ Remediate
 
 .. include:: remediate/rem-faq.rst
 
------------------
+
 Complete Workflow
 -----------------
 

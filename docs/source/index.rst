@@ -69,8 +69,8 @@ This consists of two components
 Both can be run alone or inconjunction with each other.
 
 .. image:: _static/simple_workflow.png
-   :height: 100px
-   :width: 400px
+   :height: 400px
+   :width: 1000px
    :align: center
    :alt: Simple Process Workflow
 

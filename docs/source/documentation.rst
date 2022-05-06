@@ -15,8 +15,9 @@ Remediate Documentation
 
 .. include:: remediate/rem-faq.rst
 
+*******************
+Combining them both
+*******************
 
-Complete Workflow
------------------
 
 .. include:: combined.rst

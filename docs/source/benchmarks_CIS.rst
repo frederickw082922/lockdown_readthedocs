@@ -1,41 +1,41 @@
 CIS Benchmarks
-===============
+--------------
 
 Operating Systems
------------------
+^^^^^^^^^^^^^^^^^
 
 Amazon
-^^^^^^
+~~~~~~
   - AMAZON2-CIS_
 
 RedHat Enterprise Linux
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
   - RHEL7-CIS_
   - RHEL8-CIS_
   - RHEL9-CIS_ (WIP) OS not yet released
 
 Ubuntu
-^^^^^^
+~~~~~~
 
   - UBUNTU18-CIS_
   - UBUNTU20-CIS_
 
 Windows
-^^^^^^^
+~~~~~~~
 
   - Windows-2016-CIS_
   - Windows-2019-CIS_
   - Windows-2022-CIS_
 
 Platform
---------
+^^^^^^^^
 
   - AWS-Foundations_
   - Azure-CIS_
 
 Applications
-------------
+^^^^^^^^^^^^
 
   - Apache-2.4-CIS_
   - Postgres-12-CIS_
@@ -43,7 +43,8 @@ Applications
 
 
 Archived (No Longer Maintained)
--------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+None currently
 
 .. _AMAZON2-CIS: https://github.com/ansible-lockdown/AMAZON2-CIS
 .. _RHEL7-CIS: https://github.com/ansible-lockdown/RHEL7-CIS

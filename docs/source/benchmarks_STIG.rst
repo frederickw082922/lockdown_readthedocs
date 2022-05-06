@@ -1,8 +1,12 @@
+STIG Benchmarks
+---------------
+
+
 Operating Systems
------------------
+^^^^^^^^^^^^^^^^^
 
 RedHat Enterprise Linux
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
   - RHEL7-STIG_
   - RHEL8-STIG_

@@ -1,18 +1,15 @@
-*************
-Documentation
-*************
-
-
-Audit
------
+*******************
+Audit Documentation
+*******************
 
 .. include:: audit/audit-getting-started.rst
 
 .. include:: audit/audit-faq.rst
 
 
-Remediate
----------
+***********************
+Remediate Documentation
+***********************
 
 .. include:: remediate/rem-getting-started.rst
 

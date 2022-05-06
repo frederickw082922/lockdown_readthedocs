@@ -1,9 +1,10 @@
+=============
 Documentation
 =============
 
 
 Audit
------
+=====
 
 .. include:: audit/audit-getting-started.rst
 

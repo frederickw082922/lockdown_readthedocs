@@ -1,8 +1,8 @@
-=============
+*************
 Documentation
-=============
+*************
 
-
+=====
 Audit
 =====
 
@@ -10,8 +10,9 @@ Audit
 
 .. include:: audit/audit-faq.rst
 
+=========
 Remediate
----------
+=========
 
 .. include:: remediate/rem-getting-started.rst
 

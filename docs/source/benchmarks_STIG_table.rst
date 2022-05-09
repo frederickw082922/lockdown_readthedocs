@@ -4,13 +4,15 @@ STIG Benchmarks
 Operating Systems
 ^^^^^^^^^^^^^^^^^
 
-- RHEL7-STIG_ |RH7_STIG_repo_release| |RH7_STIG_repo_build|
-- RHEL8-STIG_ |RH8_STIG_repo_release| |RH8_STIG_repo_build|
-
 .. _RH7_STIG_repo_release: image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL7-STIG?style=plastic
 .. _RH8_STIG_repo_release: image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL8-STIG?style=plastic
 .. _RH7_STIG_repo_build: image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL7-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
 .. _RH8_STIG_repo_build: image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL8-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
+
+
+- RHEL7-STIG_ |RH7_STIG_repo_release| |RH7_STIG_repo_build|
+- RHEL8-STIG_ |RH8_STIG_repo_release| |RH8_STIG_repo_build|
+
 
 
 Windows

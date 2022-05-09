@@ -1,4 +1,4 @@
-Getting started with Audit
+Audit - Getting started 
 ==========================
 
 This role is part of the `Ansible Lockdown`_ project and can be used as a 

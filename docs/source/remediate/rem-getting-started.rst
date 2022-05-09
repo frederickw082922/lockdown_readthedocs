@@ -112,6 +112,7 @@ Using Tags
 Each  control is tagged with various pieces of information about the control to allow for more refined use with skipping or running controls. For STIG this includes all of the ID's, CIS has the level2 data, and both have info related to what the control relates to. For example all controls related to SSH will have the ``ssh`` tag. 
 
 .. code-block:: yml
+  
     tags:
       - RHEL-08-040137
       - CAT2

@@ -9,7 +9,8 @@ Sometimes refered to as DISA STIG.
 DISA STIG refers to an organization (DISA — Defense Information Systems Agency) that provides technical guides (STIG — Security Technical Implementation Guide). 
 
 
-What Does this role do?
+What does this role do?
+~~~~~~~~~~~~~~~~~~~~~~~
 
 
 This role follows the  Security Technical Implementation Guide (STIG) released for the OS/Platform/application.
@@ -45,5 +46,5 @@ Controls are divided into groups based on the following properties:
    All of the default configurations are found within 
    - remediation - ``defaults/main.yml``
    - audit 
-     - standalone``vars/STIG.yml``
-     - combined ```vars/[system_hostname].yml``
+     - standalone ``vars/STIG.yml``
+     - combined ``vars/[system_hostname].yml``

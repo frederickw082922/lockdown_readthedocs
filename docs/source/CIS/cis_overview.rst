@@ -13,7 +13,7 @@ for U.S. State, Local, Tribal, and Territorial government entities,
 and the Elections Infrastructure Information Sharing and Analysis Center® (EI-ISAC®), which supports the rapidly changing cybersecurity needs of U.S. elections offices.
 
 
-What Does this role do?
+What does this role do?
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -42,5 +42,5 @@ Controls are divided into groups based on the following properties:
    All of the default configurations are found within 
    - remediation - ``defaults/main.yml``
    - audit 
-     - standalone``vars/CIS.yml``
-     - combined ```vars/[system_hostname].yml``
+     - standalone ``vars/CIS.yml``
+     - combined ``vars/[system_hostname].yml``

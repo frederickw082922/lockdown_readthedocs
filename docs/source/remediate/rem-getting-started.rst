@@ -49,12 +49,14 @@ Using ``git``
 Start by cloning the role into a directory of your choice, this example uses ~/.ansible/roles which can be changed out for any folder. That folder needs to be empty:
 
 To clone and create a folder with the same name as the repo:
+
 .. code-block:: console
    cd ~/CIS_Roles
    git clone https://github.com/ansible-lockdown/RHEL8-CIS.git
 
 
 To clone and put the files from the repo into a specific folder, folder does need to be empty:
+
 .. code-block:: console
   mkdir ~/CIS_Roles
   git clone https://github.com/ansible-lockdown/RHEL8-CIS.git ~/CIS_Roles

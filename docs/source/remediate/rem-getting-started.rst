@@ -59,9 +59,9 @@ To clone and create a folder with the same name as the repo:
 To clone and put the files from the repo into a specific folder, folder does need to be empty:
 
 .. code-block:: console
-  
-  mkdir ~/CIS_Roles
-  git clone https://github.com/ansible-lockdown/RHEL8-CIS.git ~/CIS_Roles
+
+    mkdir ~/CIS_Roles
+    git clone https://github.com/ansible-lockdown/RHEL8-CIS.git ~/CIS_Roles
 
 Ansible looks for roles in ``~/.ansible/roles`` by default.
 
@@ -83,7 +83,7 @@ Usage
 This role works well with existing playbooks. The following is an
 example of a basic playbook that uses this role:
 
-.. ansible-playbook::
+.. code-block:: yaml
 
     ---
 

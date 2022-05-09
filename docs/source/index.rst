@@ -103,6 +103,8 @@ Documentation
 Available Benchmarks
 ====================
 
-.. include:: benchmarks_CIS.rst
+.. toctree::
+   :maxdepth: 2
 
-.. include:: benchmarks_STIG.rst
+   benchmarks_CIS.rst
+   benchmarks_STIG.rst

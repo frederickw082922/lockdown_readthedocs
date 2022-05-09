@@ -4,39 +4,20 @@ STIG Benchmarks
 Operating Systems
 ^^^^^^^^^^^^^^^^^
 .. list-table:: RedHat Enterprise Linux
-   :widths: 25,25,25,25
+   :widths: 33,33,33
    :header-rows: 1
-
-..
-  Heading
 
 * - OS_Release
   - Repo_release
   - Build_State
-  - Stars
-
-..
-  OS release
-
 * - RHEL7-STIG_
   - RHEL8-STIG_
-
-..
-  Link to Latest repo release in MAIN branch
-
 * - .. image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL7-STIG?style=plastic
   - .. image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL8-STIG?style=plastic
-
-..
-  links to Build state of main branch
-
 * - .. image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL7-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
     .. image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL8-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
 
-..
-  link to Star count of repo
 
-* - .. image:: 
 Windows
 ~~~~~~~
 

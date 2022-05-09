@@ -1,4 +1,4 @@
-Remediate - Getting started
+Getting started
 ==============================
 
 This role is part of the `Ansible Lockdown`_ project and can be used as a 
@@ -22,7 +22,7 @@ and has a good understanding of using ansible
 
 
 Installation
--------------------------------------
+------------
 
 The recommended installation methods for this role are
 ``ansible-galaxy`` (recommended) or ``git``.

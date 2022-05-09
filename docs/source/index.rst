@@ -111,14 +111,21 @@ Documentation
    combined/getting-started.rst
    combined/faq.rst
 
-
-
 ====================
 Available Benchmarks
 ====================
 
 .. toctree::
    :maxdepth: 2
+   :caption: Benchmarks
 
    benchmarks_CIS.rst
    benchmarks_STIG_table.rst
+
+Support
+-------
+
+.. toctree::
+   :maxdepth:: 2
+   :caption: Support
+   support.rst

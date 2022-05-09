@@ -1,6 +1,6 @@
-********************************************************
+=======================================================
 Automated Security Benchmark - Auditing and Remediation
-********************************************************
+=======================================================
 
 Why should this role be applied to a system?
 --------------------------------------------
@@ -99,9 +99,9 @@ Documentation
    remediate/rem-getting-started.rst
    remediate/rem-faq.rst
 
-********************
+====================
 Available Benchmarks
-********************
+====================
 
 .. include:: benchmarks_CIS.rst
 

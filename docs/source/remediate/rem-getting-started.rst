@@ -2,7 +2,7 @@ Getting started
 ==============================
 
 This role is part of the `Ansible Lockdown`_ project and can be used as a 
-standalone role or it can be used along with other Ansible roles and playbooks.
+standalone role or it can be used along with other Ansible roles, playbooks, or collections.
 
 .. _Ansible Lockdown: https://github.com/ansible-lockdown
 
@@ -34,9 +34,10 @@ The easiest installation method is to use the ``ansible-galaxy`` command that
 is provided with your Ansible installation:
 
 .. code-block:: console
-   
 
    ansible-galaxy install git+|lockdown_url|
+   or
+   ansible-galaxy install git+https://github.com/ansible-lockdown/RHEL8-CIS.git
 
 The ``ansible-galaxy`` command will install the role into
 ``/etc/ansible/roles/`` and this makes it easy to use with
@@ -45,13 +46,18 @@ Ansible playbooks.
 Using ``git``
 ~~~~~~~~~~~~~
 
-Start by cloning the role into a directory of your choice:
+Start by cloning the role into a directory of your choice, this example uses ~/.ansible/roles which can be changed out for any folder. That folder needs to be empty:
 
+To clone and create a folder with the same name as the repo:
 .. code-block:: console
+   cd ~/CIS_Roles
+   git clone https://github.com/ansible-lockdown/RHEL8-CIS.git
 
-   mkdir -p ~/.ansible/roles/
-   git clone |lockdown_url|  ~/.ansible/roles/|benchmark_os_short|-|benchmark_name|
 
+To clone and put the files from the repo into a specific folder, folder does need to be empty:
+.. code-block:: console
+  mkdir ~/CIS_Roles
+  git clone https://github.com/ansible-lockdown/RHEL8-CIS.git ~/CIS_Roles
 
 Ansible looks for roles in ``~/.ansible/roles`` by default.
 

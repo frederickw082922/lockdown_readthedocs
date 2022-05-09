@@ -48,6 +48,12 @@ or
 
 Both are well known and respected benchmarks created for the industry to assist in achieving recognised compliance (e.g. PCI DSS, HIPAA, SOC2, NIST) and adopting security best practices.
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Benchmark Overview
+
+   CIS/cis_overview.rst
+   STIG/stig_overview.rst
 
 What is provided?
 -----------------
@@ -113,23 +119,21 @@ Documentation
    combined/comb-faq.rst
 
 
-Benchmarks
-----------
+Available content
+-----------------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Details
+   :caption: Benchmarks
 
-   CIS/cis_overview.rst
    CIS/benchmarks_CIS.rst
-   STIG/overview.rst
    STIG/stig_benchmarks_STIG.rst
 
 Support
 -------
 
 .. toctree::
-   :maxdepth:: 2
+   :maxdepth: 2
    :caption: Support
 
    support.rst

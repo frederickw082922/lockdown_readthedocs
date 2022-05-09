@@ -108,6 +108,7 @@ Documentation
 .. toctree::
    :maxdepth: 2
    :caption: Combined
+
    combined/getting-started.rst
    combined/faq.rst
 
@@ -128,4 +129,5 @@ Support
 .. toctree::
    :maxdepth:: 2
    :caption: Support
+
    support.rst

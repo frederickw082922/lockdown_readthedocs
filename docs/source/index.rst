@@ -121,7 +121,7 @@ Available Benchmarks
    :caption: Benchmarks
 
    benchmarks_CIS.rst
-   benchmarks_STIG_table.rst
+   benchmarks_STIG.rst
 
 Support
 -------

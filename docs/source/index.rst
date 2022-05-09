@@ -109,8 +109,8 @@ Documentation
    :maxdepth: 2
    :caption: Combined
 
-   combined/getting-started.rst
-   combined/faq.rst
+   combined/comb-getting-started.rst
+   combined/comb-faq.rst
 
 ====================
 Available Benchmarks

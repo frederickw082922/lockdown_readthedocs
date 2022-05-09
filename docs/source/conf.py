@@ -40,6 +40,7 @@ TESTED_OS = '''\
 import os
 import sys
 from collections import OrderedDict
+from m2r2 import convert
 
 # import pbr.version
 
@@ -55,6 +56,16 @@ sys.path.insert(0, os.path.join(os.path.abspath('.'), '_exts'))
 # pickling error.
 sys.setrecursionlimit(4000)
 
+# Autodoc config for markdown
+def autodoc_process(app, what, name, obj, options, lines):
+    if not lines:
+        return lines
+    text = convert('\n'.join(lines))
+    lines[:] = text.split('\n')
+
+def setup(app):
+    app.connect('autodoc-process-docstring', autodoc_process)
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -65,7 +76,6 @@ sys.setrecursionlimit(4000)
 # ones.
 extensions = [
     'ansiblelockdown_docs',
-    'm2r2'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

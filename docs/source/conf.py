@@ -65,7 +65,7 @@ sys.setrecursionlimit(4000)
 # ones.
 extensions = [
     'ansiblelockdown_docs',
-    'm2r2',
+    'm2r2'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

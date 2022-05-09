@@ -7,15 +7,15 @@ Operating Systems
    :widths: 33,33,33
    :header-rows: 1
 
-* - OS_Release
-  - Repo_release
-  - Build_State
-* - RHEL7-STIG_
-  - RHEL8-STIG_
-* - .. image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL7-STIG?style=plastic
-  - .. image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL8-STIG?style=plastic
-* - .. image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL7-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
-    .. image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL8-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
+   * - OS_Release
+     - Repo_release
+     - Build_State
+   * - RHEL7-STIG_
+     - RHEL8-STIG_
+   * - .. image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL7-STIG?style=plastic
+     - .. image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL8-STIG?style=plastic
+   * - .. image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL7-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
+       .. image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL8-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
 
 
 Windows

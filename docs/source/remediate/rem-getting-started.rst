@@ -33,10 +33,11 @@ Using ``ansible-galaxy``
 The easiest installation method is to use the ``ansible-galaxy`` command that
 is provided with your Ansible installation:
 
+The general format is ansible-galaxy install git+|url to repo|, below is an example with
+RHEL8-CIS
+
 .. code-block:: console
 
-   ansible-galaxy install git+|lockdown_url|
-   or
    ansible-galaxy install git+https://github.com/ansible-lockdown/RHEL8-CIS.git
 
 The ``ansible-galaxy`` command will install the role into
@@ -90,10 +91,10 @@ example of a basic playbook that uses this role:
     - hosts: servers
       become: yes
       roles:
-        - role: |benchmark_os_short|-|benchmark_name|
+        - role: RHEL8-CIS
           when:
             - ansible_os_family == 'RedHat'
-            - ansible_distribution_major_version | version_compare('7', '=')
+            - ansible_distribution_major_version | version_compare('8', '=')
 
 The role is fully customizable by setting the variables provided in the ``defaults/main.yml``.
 These variables are designed so that categories/severities or individual rules can be enabled,

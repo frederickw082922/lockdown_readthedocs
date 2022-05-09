@@ -93,11 +93,25 @@ Documentation
 
 .. toctree::
    :maxdepth: 2
+   :caption: Audit
 
    audit/audit-getting-started.rst
    audit/audit-faq.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Remediate
+
    remediate/rem-getting-started.rst
    remediate/rem-faq.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Combined
+   combined/getting-started.rst
+   combined/faq.rst
+
+
 
 ====================
 Available Benchmarks
@@ -107,4 +121,4 @@ Available Benchmarks
    :maxdepth: 2
 
    benchmarks_CIS.rst
-   benchmarks_STIG.rst
+   benchmarks_STIG_table.rst

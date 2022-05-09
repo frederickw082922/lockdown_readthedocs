@@ -14,7 +14,7 @@ Requirements
 ------------
 This documentation assumes that the reader has completed the steps within the
 
-* `Ansible installation guide <http://docs.ansible.com/ansible/intro_installation.html>`_.
+* `Ansible installation guide <https://docs.ansible.com/ansible/latest/installation_guide/index.html>`_.
 
 and has a good understanding of using ansible
 

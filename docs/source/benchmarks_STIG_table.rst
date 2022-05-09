@@ -3,24 +3,14 @@ STIG Benchmarks
 
 Operating Systems
 ^^^^^^^^^^^^^^^^^
-.. list-table:: RedHat Enterprise Linux
-   :widths: 33,33,33
-   :header-rows: 1
 
-   * - OS_Release
-     - Repo_release
-     - Build_State
-   * - RHEL7-STIG_
-     - RHEL8-STIG_
-   * - |RH7_STIG_repo_release|
-     - |RH8_STIG_repo_release|
-   * - |RH7_STIG_repo_build|
-     - |RH8_STIG_repo_build|
+- RHEL7-STIG_ |RH7_STIG_repo_release| |RH7_STIG_repo_build|
+- RHEL8-STIG_ |RH8_STIG_repo_release| |RH8_STIG_repo_build|
 
-.. |RH7_STIG_repo_release| image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL7-STIG?style=plastic
-.. |RH8_STIG_repo_release| image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL8-STIG?style=plastic
-.. |RH7_STIG_repo_build| image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL7-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
-.. |RH8_STIG_repo_build| image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL8-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
+.. _RH7_STIG_repo_release: image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL7-STIG?style=plastic
+.. _RH8_STIG_repo_release: image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL8-STIG?style=plastic
+.. _RH7_STIG_repo_build: image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL7-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
+.. _RH8_STIG_repo_build: image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL8-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
 
 
 Windows

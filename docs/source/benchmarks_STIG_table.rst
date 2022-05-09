@@ -12,10 +12,15 @@ Operating Systems
      - Build_State
    * - RHEL7-STIG_
      - RHEL8-STIG_
-   * - .. image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL7-STIG?style=plastic
-     - .. image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL8-STIG?style=plastic
-   * - .. image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL7-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
-       .. image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL8-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
+   * - |RH7_STIG_repo_release|
+     - |RH8_STIG_repo_release|
+   * - |RH7_STIG_repo_build|
+     - |RH8_STIG_repo_build|
+
+.. |RH7_STIG_repo_release| image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL7-STIG?style=plastic
+.. |RH8_STIG_repo_release| image:: https://img.shields.io/github/v/release/ansible-lockdown/RHEL8-STIG?style=plastic
+.. |RH7_STIG_repo_build| image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL7-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
+.. |RH8_STIG_repo_build| image:: https://img.shields.io/github/workflow/status/ansible-lockdown/RHEL8-STIG/DevelToMain?label=Main%20Build%20Status&style=plastic
 
 
 Windows

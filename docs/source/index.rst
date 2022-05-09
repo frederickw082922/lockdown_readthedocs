@@ -1,4 +1,4 @@
-=======================================================
+
 Automated Security Benchmark - Auditing and Remediation
 =======================================================
 
@@ -112,16 +112,16 @@ Documentation
    combined/comb-getting-started.rst
    combined/comb-faq.rst
 
-====================
+
 Available Benchmarks
-====================
+--------------------
 
 .. toctree::
    :maxdepth: 2
    :caption: Benchmarks
 
-   benchmarks_CIS.rst
-   benchmarks_STIG.rst
+   CIS/benchmarks_CIS.rst
+   STIG/benchmarks_STIG.rst
 
 Support
 -------

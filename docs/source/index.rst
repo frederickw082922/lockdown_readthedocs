@@ -113,15 +113,17 @@ Documentation
    combined/comb-faq.rst
 
 
-Available Benchmarks
---------------------
+Benchmarks
+----------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Benchmarks
+   :caption: Details
 
+   CIS/cis_overview.rst
    CIS/benchmarks_CIS.rst
-   STIG/benchmarks_STIG.rst
+   STIG/overview.rst
+   STIG/stig_benchmarks_STIG.rst
 
 Support
 -------

@@ -81,6 +81,8 @@ With this configuration, Ansible looks for roles in ``/etc/ansible/roles`` and
 Usage
 -----
 
+Existing Playbooks
+~~~~~~~~~~~~~~~~~~
 This role works well with existing playbooks. The following is an
 example of a basic playbook that uses this role:
 
@@ -96,11 +98,29 @@ example of a basic playbook that uses this role:
             - ansible_os_family == 'RedHat'
             - ansible_distribution_major_version | version_compare('8', '=')
 
+Using Variables
+~~~~~~~~~~~~~~~
 The role is fully customizable by setting the variables provided in the ``defaults/main.yml``.
 These variables are designed so that categories/severities or individual rules can be enabled,
 disabled, or can alter configuration for various items in the role. For more details
 on the available variables, refer to the :ref:`controls_label`
 section.
+
+
+Using Tags
+~~~~~~~~~~
+Each  control is tagged with various pieces of information about the control to allow for more refined use with skipping or running controls. For STIG this includes all of the ID's, CIS has the level2 data, and both have info related to what the control relates to. For example all controls related to SSH will have the ``ssh`` tag. 
+
+.. code-block:: yml
+    tags:
+      - RHEL-08-040137
+      - CAT2
+      - CCI-001764
+      - SRG-OS-000368-GPOS-00154
+      - SV-244546r809339_rule
+      - V-244546
+      - fapolicy
+
 
 .. note::
 

@@ -88,8 +88,16 @@ Every control item has an associated variable that can be used to switch it on o
 Additionally, the items that have configurable values, i.e. number of password attempts, will generally have a corresponding variable that allows for customization of the applied value.
 It is imperative for each deployer to understand the regulations and compliance requirements that their organization and specific environments are responsible for meeting in order to effeectively implement the controls in the relevant benchmark.
 
+Documentation
+-------------
 
-.. include:: documentation.rst
+.. toctree::
+   :maxdepth: 2
+
+   audit/audit-getting-started.rst
+   audit/audit-faq.rst
+   remediate/rem-getting-started.rst
+   remediate/rem-faq.rst
 
 ********************
 Available Benchmarks

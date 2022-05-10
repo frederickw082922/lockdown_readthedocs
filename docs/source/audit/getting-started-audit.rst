@@ -1,27 +1,6 @@
-Getting started 
+Getting started with audit
 ==========================
 
-:ref:`overview`
-
-:ref:`currently-enabled-playbooks`
-
-:ref:`setup-auditing---Remediation`
-
-:ref:`setup-auditing---Standalone`
-
-:ref:`Linux`
-
-:ref:`Windows`
-
-:ref:`requirements`
-
-:ref:`alternate-source-options`
-
-:ref:`other-audit-settings`
-
-:ref:`assistance`
-
-:ref:`community`
 
 Overview
 --------
@@ -146,7 +125,7 @@ Windows
 
 Similar to the Linux variables that can be set within the script
 
-.. code-block:: powershell
+.. code-block:: shell
    NAME
        C:\remediation_audit_logs\Windows-2019-CIS-Audit\run_audit.ps1
 

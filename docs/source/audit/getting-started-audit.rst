@@ -130,7 +130,8 @@ Windows
 
 Similar to the Linux variables that can be set within the script
 
-.. raw:: shell
+.. code-block:: shell
+
    NAME
        C:\remediation_audit_logs\Windows-2019-CIS-Audit\run_audit.ps1
 

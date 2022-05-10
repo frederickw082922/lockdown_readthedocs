@@ -27,20 +27,9 @@ It can be run in two ways:
 Currently enabled playbooks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**CIS:**
+:ref:`CIS Benchmarks<CIS Benchmarks>`
 
-- RHEL 7
-- RHEL 8
-- RHEL 9 (this is not yet GA as an OS but based on rh8)
-- UBUNTU 10.04
-- Ubuntu 20.04
-- Windows 2016 Standalone, Member and Controller
-- Windows 2019 Standalone, Member and Controller
-
-**STIG:**
-
-- RHEL 7
-- RHEL 8
+:ref:`STIG Benchmarks<STIG Benchmarks>`
 
 
 Setup auditing - Standalone

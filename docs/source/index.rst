@@ -9,7 +9,7 @@ There are three main reasons to apply this role to systems:
 
 - Improve security posture
 
-    The configurations from the |benchmark_name| add security and rigor around multiple
+    The configurations from the adopted benchmark add security and rigor around multiple
     components of an operating system, including user authentication, service
     configurations, and package management. All of these configurations add up
     to an environment that is more difficult for an attacker to penetrate and use
@@ -34,19 +34,20 @@ What is security hardening?
 
 The content delivered is based upon either one of the two major contributors to the security best practices in the IT industry.
 
-- Center for Internet Security (CIS): https://www.cisecurity.org/cis-benchmarks/
+- Center for Internet Security (CIS): `CIS <https://www.cisecurity.org/cis-benchmarks/>`_
 
   - A global IT community of experts helping to build, document sets of benchmarks to produce industry best security practices. 
     CIS Benchmarks are vendor agnostic, consensus-based security configuration guides both developed and accepted by government, business, industry, and academia.
 
 or
 
-- Security Technical Implementation Guide (STIG): https://public.cyber.mil/stigs/downloads/
+- Security Technical Implementation Guide (STIG): `STIG <https://public.cyber.mil/stigs/downloads/>`_
 
   - From the Defense Information Systems Agency (DISA) 
   - The STIG is released with a public domain license and it is commonly used to secure systems at public and private organizations around the world.
 
-Both are well known and respected benchmarks created for the industry to assist in achieving recognised compliance (e.g. PCI DSS, HIPAA, SOC2, NIST) and adopting security best practices.
+Both are well known and respected benchmarks created for the industry to assist in achieving recognised compliance (e.g. PCI DSS, HIPAA, SOC2, NIST) 
+and adopting security best practices.
 
 .. toctree::
    :maxdepth: 2
@@ -64,7 +65,7 @@ This consists of two components
 
 - Audit
 
-  - runs a small single binary on the system written in go called goss: http://goss.rocks
+  - runs a small single binary on the system written in go called `goss <https://goss.rocks>`_
   - enables you to very quickly scan your host and output the status of compliance for your host.
 
 - Remediate
@@ -86,13 +87,16 @@ How is this written?
 
 We analyze each configuration control from the applicable benchmark to determine what impact it has on a live production environment and how to
 best implement a way to audit the current configuration and how to achieve those requirements using Ansible. 
-Tasks are added to the role that configure a host to meet the configuration requirements. Each task is documented to explain what was changed, why it was changed, and what deployers need to understand about the change.
+Tasks are added to the role that configure a host to meet the configuration requirements. Each task is documented to explain what was changed, 
+why it was changed, and what deployers need to understand about the change.
 
 Deployers have the option to enable/disable every control that does not suit their environments needs. 
 Every control item has an associated variable that can be used to switch it on or off.
 
-Additionally, the items that have configurable values, i.e. number of password attempts, will generally have a corresponding variable that allows for customization of the applied value.
-It is imperative for each deployer to understand the regulations and compliance requirements that their organization and specific environments are responsible for meeting in order to effeectively implement the controls in the relevant benchmark.
+Additionally, the items that have configurable values, i.e. number of password attempts, will generally have a corresponding variable that allows for 
+customization of the applied value.
+It is imperative for each deployer to understand the regulations and compliance requirements that their organization and specific 
+environments are responsible for meeting in order to effeectively implement the controls in the relevant benchmark.
 
 Documentation
 -------------
@@ -101,7 +105,7 @@ Documentation
    :maxdepth: 2
    :caption: Audit
 
-   audit/audit-getting-started.rst
+   audit/getting-started-audit.rst
    audit/audit-faq.rst
 
 .. toctree::
@@ -128,9 +132,8 @@ Available content
 
    CIS/benchmarks_CIS.rst
    STIG/stig_benchmarks_STIG.rst
+   STIG/STIG_table.rst
 
-Support
--------
 
 .. toctree::
    :maxdepth: 2

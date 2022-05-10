@@ -6,7 +6,7 @@ Overview
 --------
 
 Ansible remediation for security benchmarks now utilises an opensource
-go binary called `goss`_ to audit the system.
+go binary called `goss <https://goss.rocks>`_ to audit the system.
 
 Enabling an alternative tool to check and ensure that the remediation
 role is working as expected.
@@ -59,13 +59,13 @@ The following requirements are needed OS independant
 
   - Linux
 
-    - `goss_linux_binary`_
-    - `goss_linux_sha`_
+    - `binary <https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-linux-amd64>`_
+    - `checksum <https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-linux-amd64.sha256>`_
 
   - Windows
 
-    - `goss_win_bin`_
-    - `goss_win_sha`_
+    - `Binary <https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-alpha-windows-amd64.exe>`_
+    - `checksum <https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-alpha-windows-amd64.exe.sha265>`_
 
 Defining the audit
 ~~~~~~~~~~~~~~~~~~

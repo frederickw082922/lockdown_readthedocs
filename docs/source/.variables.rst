@@ -5,20 +5,3 @@
 .. |benchmark_release_date| replace:: TBC
 .. |lockdown_url| replace:: https://github.com/ansible-lockdown/|benchmark_os_short|-|benchmark_name|
 .. |tested_oss| replace:: RHEL9
-
-
-..
-  replaced links
-
-.. |DISA| replace:: 
-
-..
-  url variables
-
-.. _goss: https://goss.rocks
-.. _goss_linux_binary: https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-linux-amd64
-.. _goss_linux_sha: https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-linux-amd64.sha256
-.. _goss_win_bin: https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-alpha-windows-amd64.exe
-.. _goss_win_sha: https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-alpha-windows-amd64.exe.sha256
-.. _CIS: https://www.cisecurity.org/cis-benchmarks/
-.. _STIG: https://public.cyber.mil/stigs/downloads/

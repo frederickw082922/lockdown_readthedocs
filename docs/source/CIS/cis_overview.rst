@@ -39,7 +39,7 @@ Controls are divided into groups based on the following properties:
 
 .. note::
     Along with severities it also shows the severity for servers vs workstations. You can have a control that is more
-    severe for servers than workstations or vice-versa. 
+    severe for servers than workstations or vice-versa. We tag each task with the full level, level1-server/level1-workstation
 
 .. note::
 

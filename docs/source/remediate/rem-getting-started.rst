@@ -145,8 +145,6 @@ CIS Example:
 
 .. warning::
 
-    It is strongly recommended to run the role in check mode (often called a
-    `dry run`) first before making any modifications. This gives the deployer
-    the opportunity to review all of the proposed changes before applying the
-    role to the system. Use the ``--check`` parameter with ``ansible-playbook``
-    to use check mode.
+    It is strongly recommended to run the role in a test environment first. There are controls that could introduce
+    breaking changes. Check mode might not always catch these changes. The best way to confirm how the role will change
+    your system is to fully test. 

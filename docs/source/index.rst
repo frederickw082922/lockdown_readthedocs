@@ -101,7 +101,7 @@ Documentation
    :maxdepth: 2
    :caption: Audit
 
-   audit/audit-getting-started.rst
+   audit/getting-started-audit.rst
    audit/audit-faq.rst
 
 .. toctree::

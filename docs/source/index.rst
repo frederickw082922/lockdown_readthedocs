@@ -9,7 +9,7 @@ There are three main reasons to apply this role to systems:
 
 - Improve security posture
 
-    The configurations from the |benchmark_name| add security and rigor around multiple
+    The configurations from the adopted benchmark add security and rigor around multiple
     components of an operating system, including user authentication, service
     configurations, and package management. All of these configurations add up
     to an environment that is more difficult for an attacker to penetrate and use
@@ -34,14 +34,14 @@ What is security hardening?
 
 The content delivered is based upon either one of the two major contributors to the security best practices in the IT industry.
 
-- Center for Internet Security (CIS): https://www.cisecurity.org/cis-benchmarks/
+- Center for Internet Security (CIS): `CIS`_
 
   - A global IT community of experts helping to build, document sets of benchmarks to produce industry best security practices. 
     CIS Benchmarks are vendor agnostic, consensus-based security configuration guides both developed and accepted by government, business, industry, and academia.
 
 or
 
-- Security Technical Implementation Guide (STIG): https://public.cyber.mil/stigs/downloads/
+- Security Technical Implementation Guide (STIG): `STIG`_
 
   - From the Defense Information Systems Agency (DISA) 
   - The STIG is released with a public domain license and it is commonly used to secure systems at public and private organizations around the world.
@@ -64,7 +64,7 @@ This consists of two components
 
 - Audit
 
-  - runs a small single binary on the system written in go called goss: http://goss.rocks
+  - runs a small single binary on the system written in go called `goss`_
   - enables you to very quickly scan your host and output the status of compliance for your host.
 
 - Remediate

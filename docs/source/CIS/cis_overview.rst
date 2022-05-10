@@ -5,7 +5,7 @@ CIS Overview
 What is CIS?
 ~~~~~~~~~~~~
 
-Centre for Internet Security
+Center for Internet Security
 
 CIS is home to the Multi-State Information Sharing and Analysis Center® (MS-ISAC®), 
 the trusted resource for cyber threat prevention, protection, response, and recovery 
@@ -13,12 +13,12 @@ for U.S. State, Local, Tribal, and Territorial government entities,
 and the Elections Infrastructure Information Sharing and Analysis Center® (EI-ISAC®), which supports the rapidly changing cybersecurity needs of U.S. elections offices.
 
 
-What does this role do?
+What do the CIS roles do?
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 
-This role follows the CIS provides guide released for the OS/Platform/application.
-Each guide is different, some have in excess of 200 controls and apply to various part of an OS but each guide is
+The roles follows the CIS provided guide (benchmark) released for the OS/platform/application.
+Each guide is different, some have in excess of 200 controls and apply to various parts of an OS/platform/application. Each guide is
 updated regularly by CIS.
 
 .. note::
@@ -38,8 +38,12 @@ Controls are divided into groups based on the following properties:
   These controls are considered high risk with a chance of system disruption if implemented.
 
 .. note::
+    Along with severities it also shows the severity for servers vs workstations. You can have a control that is more
+    severe for servers than workstations or vice-versa. 
 
-   All of the default configurations are found within 
+.. note::
+
+   All of the default configurations are found within and this is where they should be adjusted. Do not adjust within the tasks themselves
    - remediation - ``defaults/main.yml``
    - audit 
      - standalone ``vars/CIS.yml``

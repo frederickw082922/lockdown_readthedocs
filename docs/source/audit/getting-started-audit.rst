@@ -45,6 +45,13 @@ The following requirements are needed OS independant
   - Windows ability to run security audits and query group or local policy.
 
 - goss binary appropriate for the OS
+  
+  - to be accessible to the OS so this can be run
+
+    - The expected path is found inside the OS script and can be adjuested as required.
+
+      - linux - default /usr/local/bin/goss
+      - Windows - 
 
   - Linux
 
@@ -61,7 +68,9 @@ Defining the audit
 
 Each script runs against a configures variables file found in the content location in
 
-> {downloaded content}/vars/{benchmark}.yml
+.. code-block:: shell
+
+   {downloaded content}/vars/{benchmark}.yml
 
 These are the variables that configure which controls are run along with some configurable settings during an audit.
 
@@ -72,15 +81,17 @@ There is also switch options to allow you to run a couple of these at run time.
 
 Script runtime options
 
-- The group option allows a meta feild to be assigned against the report for use in analysis if servers can be grouped together.
+- The group option allows a meta field to be assigned against the report for use in analysis if servers can be grouped together.
 If more than one group this can be comma seperated
 
 - The outfile is the filename and location to save the full audit report to.
 
-Linux
-~~~~~
+Running on Linux
+~~~~~~~~~~~~~~~~
 
-The run_audit.sh script
+- Script 
+
+  - run_audit.sh (found in content directory)
 
 This is written that:
 
@@ -117,9 +128,18 @@ script help
 Windows
 ~~~~~~~
 
-Similar to the Linux variables that can be set within the script
+- Script 
 
-.. code-block:: shell
+  - run_audit.sh (found in content directory)
+
+Variables can be set within the script
+
+# Set Variables for Audit
+
+$DEFAULT_CONTENT_DIR = "C:\remediation_audit_logs"  # This can be changed using cli
+$DEFAULT_AUDIT_BIN = "$DEFAULT_CONTENT_DIR\goss.exe"  # This can be changed using cli option
+
+.. raw:: shell
 
    NAME
        C:\remediation_audit_logs\Windows-2019-CIS-Audit\run_audit.ps1

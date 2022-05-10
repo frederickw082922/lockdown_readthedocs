@@ -136,10 +136,12 @@ Variables can be set within the script
 
 # Set Variables for Audit
 
-$DEFAULT_CONTENT_DIR = "C:\remediation_audit_logs"  # This can be changed using cli
-$DEFAULT_AUDIT_BIN = "$DEFAULT_CONTENT_DIR\goss.exe"  # This can be changed using cli option
+.. code-block:: shell
 
-.. raw:: shell
+    $DEFAULT_CONTENT_DIR = "C:\remediation_audit_logs"  # This can be changed using cli
+    $DEFAULT_AUDIT_BIN = "$DEFAULT_CONTENT_DIR\goss.exe"  # This can be changed using cli option
+
+.. code-block:: shell
 
    NAME
        C:\remediation_audit_logs\Windows-2019-CIS-Audit\run_audit.ps1

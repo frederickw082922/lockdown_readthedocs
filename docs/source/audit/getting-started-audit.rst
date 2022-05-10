@@ -51,14 +51,19 @@ It is assumed that as you have the script you have downloaded the audit content 
 The following requirements are needed OS independant
 
 - Super user or permissions to run privilege commands
+
   - Linux sudo can work
   - Windows ability to run security audits and query group or local policy.
 
 - goss binary appropriate for the OS
+
   - Linux
+
     - [64bit_v0.3.16_binary](https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-linux-amd64)
     - [64bit_v0.3.16_sha256](https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-linux-amd64.sha256)
+
   - Windows
+
     - [64bit_v0.3.16_exe](https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-alpha-windows-amd64.exe)
     - [64bit_v0.3.16_sha256](https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-alpha-windows-amd64.exe.sha256)
 

@@ -133,10 +133,9 @@ Available content
    CIS/benchmarks_CIS.rst
    STIG/stig_benchmarks_STIG.rst
 
-Support
--------
 
 .. toctree::
    :maxdepth: 2
+   :caption: Support
 
    support.rst

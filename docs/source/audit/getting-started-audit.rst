@@ -27,9 +27,9 @@ It can be run in two ways:
 Currently enabled playbooks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:ref:`CIS Benchmarks<CIS Benchmarks>`
+:ref:`CIS Benchmarks<https://lockdown-readthedocs.readthedocs.io/en/latest/CIS/benchmarks_CIS.html>`
 
-:ref:`STIG Benchmarks<STIG Benchmarks>`
+:ref:`STIG Benchmarks<https://lockdown-readthedocs.readthedocs.io/en/latest/CIS/STIG_table.html>`
 
 
 Setup auditing - Standalone

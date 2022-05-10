@@ -132,6 +132,7 @@ Available content
 
    CIS/benchmarks_CIS.rst
    STIG/stig_benchmarks_STIG.rst
+   STIG/STIG_table.rst
 
 
 .. toctree::

@@ -52,5 +52,3 @@ Archived(No Longer Maintained)
 .. _Apache-2.4-STIG: https://github.com/ansible-lockdown/APACHE-2.4-STIG
 .. _Postgres-9-STIG: https://github.com/ansible-lockdown/POSTGRES-9-STIG
 .. _Windows_Advance_Firewall-STIG: https://github.com/ansible-lockdown/WinFWADV-STIG
-
-.. include:: STIG/STIG_table.rst

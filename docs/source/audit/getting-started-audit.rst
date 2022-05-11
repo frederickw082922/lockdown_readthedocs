@@ -12,10 +12,13 @@ Ensuring consistency in checks by using the same settings and controls
 that have been enabled in the remediation steps, are the same ones
 checked by the audit.
 
-.. note::
-    The audit runs using the host only compute resources (memory/cpu).
-    Please be aware this may have advserse effect running on a heavily utilises system.
-    Please consider shared resources when running on many hosts simultaneously.
+
+Considerations
+~~~~~~~~~~~~~~
+
+- The audit runs using the host only compute resources (memory/cpu).
+- Please be aware this may have advserse effect running on a heavily utilises system.
+- Please consider shared resources when running on many hosts simultaneously.
 
 
 It can be run in two ways:

@@ -4,31 +4,13 @@
 
    intro.rst
 
-
 .. toctree::
    :maxdepth: 2
-   :caption: Audit
+   :caption: Documentation
 
    audit/getting-started-audit.rst
-   audit/audit-faq.rst
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Remediate
-
    remediate/rem-getting-started.rst
-   remediate/rem-faq.rst
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Combined
-
    combined/comb-getting-started.rst
-   combined/comb-faq.rst
-
-
-Available content
------------------
 
 .. toctree::
    :maxdepth: 2
@@ -65,3 +47,6 @@ We do however ask the following:
    :caption: Support
 
    support.rst
+   audit/audit_faq.rst
+   remediate/rem_faq.rst
+   links.rst

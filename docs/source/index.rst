@@ -26,8 +26,6 @@
    :caption: Development
 
    contributing.rst
-   audit/audit_development.rst
-   remediate/rem_development.rst
 
 .. toctree::
    :maxdepth: 2

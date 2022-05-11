@@ -145,7 +145,7 @@ Directly (``defaults/main.yml``)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is the most basic way to make the change. The file has all of the available variables along with comments on what task the variable is for, a description on what the variable is, and 
-the formatting for the value in the variable. 
+the formatting for the value in the variable. Just update the values as needed
 
 Extra-Vars
 ~~~~~~~~~~
@@ -153,11 +153,10 @@ Extra-Vars
 This is where the power of using variables via ``defaults/main.yml`` come into play. Anywhere you can use or set an extra var is place you can set these variables. 
 
 CLI In-Line setting (Only run STIG CAT1)
+
 .. code-block:: console
 
   ansible-playbook -i host_file -e '{ "rhel8stig_cat2_patch":false,"rhel8stig_cat3_patch":false }' ./RHEL8-STIG/site.yml
-
-
 
 Using Tags
 ~~~~~~~~~~

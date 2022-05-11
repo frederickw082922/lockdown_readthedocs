@@ -8,9 +8,7 @@
    :maxdepth: 2
    :caption: Getting Started
 
-   audit/getting-started-audit.rst
-   remediate/rem-getting-started.rst
-   combined/comb-getting-started.rst
+   getting-started.rst
 
 .. toctree::
    :maxdepth: 2

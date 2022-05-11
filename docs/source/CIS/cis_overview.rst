@@ -31,8 +31,8 @@ Controls are divided into groups based on the following properties:
 
 - Level 1
   The majority of control are based at this level.
-  These controls have are condidered to have a low impact to a system.
-  By implemnetting these controls is considered to medium change for disruption.
+  These controls have are considered to have a low impact to a system.
+  By implementing these controls is considered low to medium risk of disruption.
 
 - Level 2
   These controls are considered high risk with a chance of system disruption if implemented.

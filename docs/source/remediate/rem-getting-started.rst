@@ -164,6 +164,7 @@ Extra-Vars
 This is where the power of using variables via ``defaults/main.yml`` come into play. Anywhere you can use or set an extra var is place you can set these variables. 
 
 CLI In-Line setting (Only run STIG CAT1)
+
 .. code-block:: console
 
   ansible-playbook -i host_file -e '{ "rhel8stig_cat2_patch":false,"rhel8stig_cat3_patch":false }' ./RHEL8-STIG/site.yml

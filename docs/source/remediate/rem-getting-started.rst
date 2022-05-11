@@ -153,7 +153,7 @@ Extra-Vars
 
 This is where the power of using variables via ``defaults/main.yml`` come into play. Anywhere you can use or set an extra var is place you can set these variables. 
 
-CLI In-Line setting (Only run STIG CAT1)
+CLI In-Line setting (Set to only run STIG CAT1)
 
 .. code-block:: console
 

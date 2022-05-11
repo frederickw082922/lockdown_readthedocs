@@ -8,12 +8,15 @@ Overview
 Ansible remediation for security benchmarks now utilises an opensource
 go binary called `goss <https://goss.rocks>`_ to audit the system.
 
-Enabling an alternative tool to check and ensure that the remediation
-role is working as expected.
-
 Ensuring consistency in checks by using the same settings and controls
 that have been enabled in the remediation steps, are the same ones
 checked by the audit.
+
+.. note::
+    The audit runs using the host only compute resources (memory/cpu).
+    Please be aware this may have advserse effect running on a heavily utilises system.
+    Please consider shared resources when running on many hosts simultaneously.
+
 
 It can be run in two ways:
 
@@ -35,7 +38,8 @@ Currently enabled playbooks
 Setup auditing - Standalone
 ---------------------------
 
-It is assumed that as you have the script you have downloaded the audit content already from source control or your own configired location.
+It is assumed that as you have the script you have downloaded the audit content already from 
+source control or your own configured location.
 
 The following requirements are needed OS independant
 
@@ -48,10 +52,11 @@ The following requirements are needed OS independant
   
   - to be accessible to the OS so this can be run
 
-    - The expected path is found inside the OS script and can be adjuested as required.
+    - The expected path for the binary is found inside the relevant OS script and can be adjusted as required.
 
-      - linux - default /usr/local/bin/goss
-      - Windows - 
+.. note::
+    The binary only needs to be accessible to the host with ability to use. 
+    The relevant script needs to be adjust to point to the path of the binary.
 
   - Linux
 
@@ -141,6 +146,7 @@ Variables can be set within the script
     $DEFAULT_CONTENT_DIR = "C:\remediation_audit_logs"  # This can be changed using cli
     $DEFAULT_AUDIT_BIN = "$DEFAULT_CONTENT_DIR\goss.exe"  # This can be changed using cli option
 
+script help
 .. code-block:: shell
 
    NAME
@@ -195,7 +201,7 @@ Variables can be set within the script
        PS C:\>./run_audit.ps1
 
        ./run_audit.ps1 -auditbin c:\path_to\binary.name
-       ./run_audit.ps1 -auditdir c:\somepath_for _audit_content
+       ./run_audit.ps1 -auditdir c:\somepath_for_audit_content
        ./run_audit.ps1 -varsfile myvars.yml
        ./run_audit.ps1 -outfile path\to\audit\output.json
        ./run_audit.ps1 -group webserver

@@ -210,10 +210,3 @@ Variables can be set within the script
        ./run_audit.ps1 -varsfile myvars.yml
        ./run_audit.ps1 -outfile path\to\audit\output.json
        ./run_audit.ps1 -group webserver
-
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contributing
-
-   audit/audit_development.rst

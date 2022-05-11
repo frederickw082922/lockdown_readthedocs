@@ -8,7 +8,7 @@
    :maxdepth: 2
    :caption: Getting Started
 
-   getting-started.rst
+   getting_started.rst
 
 .. toctree::
    :maxdepth: 2

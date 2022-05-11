@@ -12,7 +12,7 @@ Considerations
 - Keep it as simple as possible to aid investigation and debug
 - Ensure it aligns with the remediate portion (the two are intrinsically linked when combined)
 
-layout
+Layout
 ~~~~~~
 
 - Each control should be in its own file.

@@ -10,3 +10,9 @@ We do however ask the following:
 
   - signed-off-by (user is provided)
   - signed-by (gpg key signed)
+
+.. toctree::
+   :maxdepth: 3
+
+   audit/audit_development.rst
+   remediate/rem_development.rst

@@ -20,6 +20,18 @@ and has a good understanding of using ansible
 
 * `Ansible User Guide <https://docs.ansible.com/ansible/latest/user_guide/index.html>`_.
 
+.. note::
+
+    The role requires elevated privileges and must be run as a user with ``sudo``
+    access. The example above uses the ``become`` option, which causes Ansible to use
+    sudo before running tasks.
+
+.. warning::
+
+    It is strongly recommended to run the role in a test environment first. There are controls that could introduce
+    breaking changes. Check mode might not always catch these changes. The best way to confirm how the role will change
+    your system is to fully test. 
+
 
 Installation
 ------------
@@ -168,16 +180,3 @@ CLI In-Line setting (Only run STIG CAT1)
 .. code-block:: console
 
   ansible-playbook -i host_file -e '{ "rhel8stig_cat2_patch":false,"rhel8stig_cat3_patch":false }' ./RHEL8-STIG/site.yml
-
-
-.. note::
-
-    The role requires elevated privileges and must be run as a user with ``sudo``
-    access. The example above uses the ``become`` option, which causes Ansible to use
-    sudo before running tasks.
-
-.. warning::
-
-    It is strongly recommended to run the role in a test environment first. There are controls that could introduce
-    breaking changes. Check mode might not always catch these changes. The best way to confirm how the role will change
-    your system is to fully test. 

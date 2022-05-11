@@ -146,7 +146,7 @@ We do however ask the following:
 - For Pull requests we do ask that:
 
   - signed-off-by (user is provided)
-  - sign-by (gpg key signed)
+  - signed-by (gpg key signed)
 
 .. toctree::
    :maxdepth: 2

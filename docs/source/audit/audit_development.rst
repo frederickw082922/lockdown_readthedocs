@@ -7,19 +7,19 @@ Adding code
 We are trying to maintain a set of standards we would like to achieve for all code that is written.
 
 Considerations
-""""""""""""""
+~~~~~~~~~~~~~~
 
 - Keep it as simple as possible to aid investigation and debug
 - Ensure it aligns with the remediate portion (the two are intrinsically linked when combined)
 
 layout
-""""""
+~~~~~~
 
 - Each control should be in its own file.
 - Use variables wherever possible
 
 Content
-"""""""
+~~~~~~~
 
 Each test requires the following to be included
 
@@ -41,7 +41,7 @@ Each test requires the following to be included
       CISv8_IG2: true
       CISv8_IG3: true
 
-** STIG Specific**
+**STIG Specific**
 
 .. code-block:: yaml
 
@@ -56,8 +56,3 @@ Each test requires the following to be included
       Rule_ID: SV-204392r646841_rule
       STIG_ID: RHEL-07-010010
       Vul_ID: V-204392
-
-
-
-
-

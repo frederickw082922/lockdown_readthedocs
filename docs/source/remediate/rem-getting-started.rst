@@ -100,6 +100,7 @@ This role can be used on it's own as a role. The file ``site.yml`` is the includ
 since that is too site specific, that will need to be managed locally. Below are examples of how to run in various scenarios
 
 CLI - Notice the reference to site.yml
+
 .. code-block:: console
 
   cd roles

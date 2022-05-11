@@ -24,7 +24,7 @@ Considerations
 It can be run in two ways:
 
 - Enabled to run as part of the ansible playbook and is setup to capture pre remediation and post remediation states. 
-  Using the same configured variables as used in remediation See `Using Audit and Remediate at the same time <https://lockdown-readthedocs.readthedocs.io/en/latest/combined/comb-getting-started.html`_
+  Using the same configured variables as used in remediation See `Using Audit and Remediate at the same time <https://lockdown-readthedocs.readthedocs.io/en/latest/combined/comb-getting-started.html>`_
 
 - Standalone script
 
@@ -102,7 +102,7 @@ Running on Linux
 
   - run_audit.sh (found in content directory)
 
-This is written that:
+Understanding variables:
 
 - Uppercase variable are the only ones that should need changing
 - lowercase variables are the ones that are discovered or built from existing.
@@ -143,14 +143,14 @@ Running on Windows
 
 Variables can be set within the script
 
-# Set Variables for Audit
+**Variables for Audit**
 
 .. code-block:: shell
 
     $DEFAULT_CONTENT_DIR = "C:\remediation_audit_logs"  # This can be changed using cli
     $DEFAULT_AUDIT_BIN = "$DEFAULT_CONTENT_DIR\goss.exe"  # This can be changed using cli option
 
-script help
+**script help**
 
 .. code-block:: shell
 
@@ -210,3 +210,10 @@ script help
        ./run_audit.ps1 -varsfile myvars.yml
        ./run_audit.ps1 -outfile path\to\audit\output.json
        ./run_audit.ps1 -group webserver
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Audit
+
+   audit/audit_contributing.rst

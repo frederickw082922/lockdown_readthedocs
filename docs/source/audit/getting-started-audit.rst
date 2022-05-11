@@ -134,10 +134,10 @@ script help
 
    Other options can be assigned in the script itself
 
-Windows
-~~~~~~~
+Running on Windows
+~~~~~~~~~~~~~~~~~~
 
-- Script 
+- Script
 
   - run_audit.sh (found in content directory)
 
@@ -151,6 +151,7 @@ Variables can be set within the script
     $DEFAULT_AUDIT_BIN = "$DEFAULT_CONTENT_DIR\goss.exe"  # This can be changed using cli option
 
 script help
+
 .. code-block:: shell
 
    NAME

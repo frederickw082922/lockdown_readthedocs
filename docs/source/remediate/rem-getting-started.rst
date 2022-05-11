@@ -134,7 +134,7 @@ Variables and the Role
 
 The role is fully customizable by setting the variables provided in the ``defaults/main.yml`` file. These variables range in usage from toggling entire sections (CIS), categories (STIG), general groups (GUI related), individual controls, localized settings, etc.
 There are comments around these variables that have a description of what the variable does, what the value options are, and what controls are associated with the variable.
-Variables are also listed in order of appearance in the execution of the role, variables used early in the are listed earlier in the file. Variables in this location are also very low in precedence, `here is the official list of variable precedence. <https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#understanding-variable-precedence>`_.
+Variables are also listed in order of appearance in the execution of the role, variables used early in the are listed earlier in the file. Variables in this location are also very low in precedence, `here is the official list of variable precedence. <https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#understanding-variable-precedence>`_
 This means they are over-written very easily via extra vars
 
 This role has been written with ease of use in mind, which means it's written in a way that requires as little user interaction as possible. No need to modify any tasks at all!
@@ -142,14 +142,14 @@ This role has been written with ease of use in mind, which means it's written in
 Using Variables
 ~~~~~~~~~~~~~~~
 
-Directly (``defaults/main.yml``)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Modifying Directly (``defaults/main.yml``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is the most basic way to make the change. The file has all of the available variables along with comments on what task the variable is for, a description on what the variable is, and 
 the formatting for the value in the variable. Just update the values as needed
 
-Extra-Vars
-~~~~~~~~~~
+Modifying with Extra-Vars
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is where the power of using variables via ``defaults/main.yml`` come into play. Anywhere you can use or set an extra var is place you can set these variables. 
 

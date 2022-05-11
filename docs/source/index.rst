@@ -34,6 +34,6 @@
    :caption: Support
 
    support.rst
-   audit/audit_faq.rst
-   remediate/rem_faq.rst
+   audit/audit-faq.rst
+   remediate/rem-faq.rst
    links.rst

@@ -1,4 +1,4 @@
-Getting started with audit
+Audit
 ==========================
 
 

@@ -1,4 +1,4 @@
-Getting started
+Remediate
 ==============================
 
 This role is part of the `Ansible Lockdown`_ project and can be used as a 

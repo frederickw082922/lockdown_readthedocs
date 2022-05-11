@@ -1,4 +1,4 @@
-Using Audit and Remediate at the same time
+Using Audit and Remediate together
 ==========================================
 
 Using both Audit and Remediate in a workflow

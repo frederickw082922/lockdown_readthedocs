@@ -17,13 +17,14 @@ Considerations
 ~~~~~~~~~~~~~~
 
 - The audit runs using the host only compute resources (memory/cpu).
-- Please be aware this may have advserse effect running on a heavily utilises system.
+- Please be aware this may have adverse effect running on a heavily utilized system.
 - Please consider shared resources when running on many hosts simultaneously.
 
 
 It can be run in two ways:
 
-- Enabled to run as part of the ansible playbook and is setup to capture pre remediation and post remediation states. Using the same configured variables as used in remediation
+- Enabled to run as part of the ansible playbook and is setup to capture pre remediation and post remediation states. 
+  Using the same configured variables as used in remediation See `Using Audit and Remediate at the same time <https://lockdown-readthedocs.readthedocs.io/en/latest/combined/comb-getting-started.html`_
 
 - Standalone script
 
@@ -38,8 +39,8 @@ Currently enabled playbooks
 `STIG Benchmarks <https://lockdown-readthedocs.readthedocs.io/en/latest/CIS/STIG_table.html>`_
 
 
-Setup auditing - Standalone
----------------------------
+Setup auditing as standalone
+----------------------------
 
 It is assumed that as you have the script you have downloaded the audit content already from 
 source control or your own configured location.
@@ -57,10 +58,6 @@ The following requirements are needed OS independant
 
     - The expected path for the binary is found inside the relevant OS script and can be adjusted as required.
 
-.. note::
-    The binary only needs to be accessible to the host with ability to use. 
-    The relevant script needs to be adjust to point to the path of the binary.
-
   - Linux
 
     - `binary <https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-linux-amd64>`_
@@ -70,6 +67,10 @@ The following requirements are needed OS independant
 
     - `Binary <https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-alpha-windows-amd64.exe>`_
     - `checksum <https://github.com/aelsabbahy/goss/releases/download/v0.3.16/goss-alpha-windows-amd64.exe.sha265>`_
+
+.. note::
+    The binary only needs to be accessible to the host with ability to use. 
+    The relevant script needs to be adjust to point to the path of the binary.
 
 Defining the audit
 ~~~~~~~~~~~~~~~~~~

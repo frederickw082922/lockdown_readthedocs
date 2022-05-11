@@ -1,20 +1,10 @@
-How to contribute to development
---------------------------------
-
-As with all opensource repositories to work community contributions from issues and pull requests.
-We do however ask the following:
-
-- respect the users, time and effort put into feedback
-- try and provide as much information as possibke with issues or pull request.
-- For Pull requests we do ask that:
-
-  - signed-off-by (user is provided)
-  - sign-by (gpg key signed)
+How to contribute to audit development
+--------------------------------------
 
 Adding code
 ~~~~~~~~~~~
 
-We are trying to develop a set of standards we would like to achieve for all code that is written.
+We are trying to maintain a set of standards we would like to achieve for all code that is written.
 
 Considerations
 """"""""""""""

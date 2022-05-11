@@ -214,6 +214,6 @@ Variables can be set within the script
 
 .. toctree::
    :maxdepth: 2
-   :caption: Audit
+   :caption: Contributing
 
-   audit/audit_contributing.rst
+   audit/audit_development.rst

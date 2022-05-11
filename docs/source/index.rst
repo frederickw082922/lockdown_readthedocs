@@ -135,6 +135,29 @@ Available content
    STIG/STIG_table.rst
 
 
+Contributing
+------------
+
+How to contribute to audit development
+--------------------------------------
+
+As with all opensource repositories to work community contributions from issues and pull requests.
+We do however ask the following:
+
+- respect the users, time and effort put into feedback
+- try and provide as much information as possibke with issues or pull request.
+- For Pull requests we do ask that:
+
+  - signed-off-by (user is provided)
+  - sign-by (gpg key signed)
+
+.. toctree::
+   :maxdepth: 2
+
+   audit/audit_development.rst
+   remediate/rem_development.rst
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Support

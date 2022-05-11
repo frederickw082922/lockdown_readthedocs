@@ -90,10 +90,26 @@ an example of a ``ansible.cfg`` file that uses a custom path for roles:
 With this configuration, Ansible looks for roles in ``/etc/ansible/roles`` and
 ``~/custom/roles``.
 
-Usage
------
+How to Use
+----------
 
-Existing Playbooks
+On It's Own
+~~~~~~~~~~~
+
+This role can be used on it's own as a role. The file ``site.yml`` is the included file to point to. This role does not include an inventory file for hosts
+since that is too site specific, that will need to be managed locally. Below are examples of how to run in various scenarios
+
+CLI - Notice the reference to site.yml
+.. code-block:: console
+
+  cd roles
+  ansible-playbook -i hosts -e '{ "rhel8stig_cat2_patch":false,"rhel8stig_cat3_patch":false }' ./RHEL8-STIG/site.yml'
+
+Tower Steps
+
+
+
+With Existing Playbooks
 ~~~~~~~~~~~~~~~~~~
 This role works well with existing playbooks. The following is an
 example of a basic playbook that uses this role:
@@ -110,13 +126,37 @@ example of a basic playbook that uses this role:
             - ansible_os_family == 'RedHat'
             - ansible_distribution_major_version | version_compare('8', '=')
 
+
+
+Variables and the Role
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The role is fully customizable by setting the variables provided in the ``defaults/main.yml`` file. These variables range in usage from toggling entire sections (CIS), categories (STIG), general groups (GUI related), individual controls, localized settings, etc.
+There are comments around these variables that have a description of what the variable does, what the value options are, and what controls are associated with the variable.
+Variables are also listed in order of appearance in the execution of the role, variables used early in the are listed earlier in the file. Variables in this location are also very low in precedence, `here is the official list of variable precedence. <https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#understanding-variable-precedence>`.
+This means they are over-written very easily via extra vars
+
+This role has been written with ease of use in mind, which means it's written in a way that requires as little user interaction as possible. No need to modify any tasks at all!
+
 Using Variables
 ~~~~~~~~~~~~~~~
-The role is fully customizable by setting the variables provided in the ``defaults/main.yml``.
-These variables are designed so that categories/severities or individual rules can be enabled,
-disabled, or can alter configuration for various items in the role. For more details
-on the available variables, refer to the :ref:`controls_label`
-section.
+
+Directly (``defaults/main.yml``)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is the most basic way to make the change. The file has all of the available variables along with comments on what task the variable is for, a description on what the variable is, and 
+the formatting for the value in the variable. 
+
+Extra-Vars
+~~~~~~~~~~
+
+This is where the power of using variables via ``defaults/main.yml`` come into play. Anywhere you can use or set an extra var is place you can set these variables. 
+
+CLI In-Line setting (Only run STIG CAT1)
+.. code-block:: console
+
+  ansible-playbook -i host_file -e '{ "rhel8stig_cat2_patch":false,"rhel8stig_cat3_patch":false }' ./RHEL8-STIG/site.yml
+
 
 
 Using Tags

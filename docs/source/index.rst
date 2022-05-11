@@ -138,9 +138,6 @@ Available content
 Contributing
 ------------
 
-How to contribute to audit development
---------------------------------------
-
 As with all opensource repositories to work community contributions from issues and pull requests.
 We do however ask the following:
 
@@ -153,6 +150,7 @@ We do however ask the following:
 
 .. toctree::
    :maxdepth: 2
+   :caption: Development
 
    audit/audit_development.rst
    remediate/rem_development.rst

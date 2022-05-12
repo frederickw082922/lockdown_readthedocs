@@ -27,13 +27,17 @@ Each test requires the following to be included
 
   - title: {benchmark-id} | {benchmark-heading}
   
-**Metadata**
+Metadata
+""""""""
 
 This is added to the audit benchmark for reference across compliance requirements
+It uses two level of metadata
 
-*Generic*
+- audit metadata - this is general system information and audit information
+- control metadata - this is added to every audit control and is specific to each control.
 
-- system metadata (required)
+
+**audit metadata** (required)
 
   - This is items set/discovered about the system within the script set via vars in the script
   - Referenced in the goss.yml file.
@@ -46,7 +50,7 @@ Contains:
 - host_os_release: {{ .Vars.os_release }} - OS version (e.g. 7)
 - host_os_distribution: {{ .Vars.os_distribution }} - OS distribution ( e.g. rhel)
 - host_automation_group: {{ .Vars.auto_group }} 
-  
+
   - If set allows a meta field to be used to group like systems
   - If run via remediate uses host group memberships
   - if run via script is an optional value or null
@@ -62,12 +66,12 @@ Contains:
 - benchmark_os: {{ .Vars.benchmark_os } - Benchmark OS title (e.g. RHEL7)
 
 
-- benchmark metadata (required) 
+**control metadata** (required) 
   
   - This consists of data found in the benchmark documentation
   - This potentially changes with each release update (this will need to be correct for the release being worked on)
 
-**CIS Specific**
+*CIS Specific*
 
 This contains the following:
 
@@ -89,7 +93,7 @@ This contains the following:
       CISv8_IG2: true
       CISv8_IG3: true
 
-**STIG Specific**
+*STIG Specific*
 
 All can be found in the details of the control itself
 

@@ -12,9 +12,7 @@ Considerations
 ~~~~~~~~~~~~~~
 
 - Keep it as simple as possible to aid investigation and debug.
-- Readability is key. This means the most efficient way to write something might lead to the task being complicated and hard to read. For example if you have a
-multi-access loop, with vars spread across the role that reference tasks of their own, with jinja filters on top of json filters to do it one task where having three
-tasks to accomplish the same thing but more readable please create the three tasks. 
+- Readability is key. This means the most efficient way to write something might lead to the task being complicated and hard to read. For example if you have a multi-access loop, with vars spread across the role that reference tasks of their own, with jinja filters on top of json filters to do it one task where having three tasks to accomplish the same thing but more readable please create the three tasks. 
 - Ensure it aligns with the remediate portion (the two are intrinsically linked when combined)
 
 Layout
@@ -30,14 +28,14 @@ Content
 Each test requires the following to be included. The notes blow go with the example
 
 **STIG Specific**
+
 - Name (-name:) - Each control gets it's own task and that task needs a name. The name format is category | STIG ID | PATCH or AUDIT | title of control copied from STIG.
   - PATCH or AUDIT - This is in reference to the task making a change (PATCH) or does not make a change (AUDIT). Tasks that don't make changes are one that generally gather information to be used later
 - Block - If there are more than one task to complete a control please keep those in a single task but using a block format. 
   - When using blocks the steps in the block should have a pipe (|) after the title and a description of what that task is doing in the block. 
 - Module - This is just the module being used to execute that task, nothing special here
 - Parameters - Parameters for the task
-  - When using ``command`` or ``shell`` modules to gather information please set ``changed_when`` and ``failed_when`` to false. This will cause the task to always run and register
-    which always creates the variable registering. The action parts of the task that use that var should handle the var if a fail occured during the ``command`` or ``shell`` function
+  - When using ``command`` or ``shell`` modules to gather information please set ``changed_when`` and ``failed_when`` to false. This will cause the task to always run and register which always creates the variable registering. The action parts of the task that use that var should handle the var if a fail occured during the ``command`` or ``shell`` function
     - Please always use ``shell`` over ``command``. The ``command`` module is being phased out, but also for consistency please use ``shell``
   - When using modules that have alias's, please do not use the alias since those are often not part of the module documentation
   - When using modules that require a path type of parameter please use that first

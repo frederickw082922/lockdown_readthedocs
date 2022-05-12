@@ -91,6 +91,15 @@ This contains the following:
 
 **STIG Specific**
 
+All can be found in the details of the control itself
+
+- Cat: the category this control is associated with (1|2|3)
+- CCI: Common identifier This is found in  the stig documentation
+- Group_Title: associated group the control is part of.
+- Rule_ID: This changes with every interation of the control details
+- STIG_ID: control id as known by STIG
+- Vul_ID: vulnernability identifier
+
 .. code-block:: yaml
 
     meta:

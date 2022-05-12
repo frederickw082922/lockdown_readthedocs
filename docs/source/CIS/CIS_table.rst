@@ -23,12 +23,18 @@ Operating Systems
    "Windows-2019-CIS_", "True", "True", "True"
    "Windows-2022-CIS_", "True", "True", "True"
 
+Platforms
+^^^^^^^^^^^^^^^^^
+
 .. csv-table:: CIS Platform Benchmark availability
    :header: "Benchmark", "Maintained", "Remediate", "Audit"
    :widths: 40, 20, 20, 20
 
    "AWS-Foundations_", "True", "True", "False"
    "Azure-CIS_", "True", "True", "False"
+
+Applications
+^^^^^^^^^^^^^^^^^
 
 .. csv-table:: CIS Application Benchmark availability
    :header: "Benchmark", "Maintained", "Remediate", "Audit"

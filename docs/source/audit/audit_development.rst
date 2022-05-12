@@ -23,12 +23,59 @@ Content
 
 Each test requires the following to be included
 
-- title
-- meta data - This consists of data found in the benchmark documentation
+- title - this needs to be in the format of
 
-  - This potentially changes with each release (this will need to be correct for the release being worked on)
+  - title: {benchmark-id} | {benchmark-heading}
+  
+**Metadata**
+
+This is added to the audit benchmark for reference across compliance requirements
+
+*Generic*
+
+- system metadata (required)
+
+  - This is items set/discovered about the system within the script set via vars in the script
+  - Referenced in the goss.yml file.
+
+Contains:
+
+- host_machine_uuid: {{ .Vars.machine_uuid }} - discovered UUID of system (used as unique identifier)
+- host_epoch: {{ .Vars.epoch }} - epoch time that script initiated (part of output filename)
+- host_os_locale: {{ .Vars.os_locale }} - system locale (TZ)
+- host_os_release: {{ .Vars.os_release }} - OS version (e.g. 7)
+- host_os_distribution: {{ .Vars.os_distribution }} - OS distribution ( e.g. rhel)
+- host_automation_group: {{ .Vars.auto_group }} 
+  
+  - If set allows a meta field to be used to group like systems
+  - If run via remediate uses host group memberships
+  - if run via script is an optional value or null
+
+- host_hostname: {{ .Vars.os_hostname }} - hostname
+- host_system_type: {{ .Vars.system_type }} 
+
+  - Linux server/workstation
+  - Windows (domain_member or standalone or domain_controller) -refer to windows system types
+  
+- benchmark_type: {{ .Vars.benchmark_type }} - CIS or STIG
+- benchmark_version: {{ .Vars.benchmark_version }} - Benchmark version (e.g.0.0)
+- benchmark_os: {{ .Vars.benchmark_os } - Benchmark OS title (e.g. RHEL7)
+
+
+- benchmark metadata (required) 
+  
+  - This consists of data found in the benchmark documentation
+  - This potentially changes with each release update (this will need to be correct for the release being worked on)
 
 **CIS Specific**
+
+This contains the following:
+
+- server: cis level options: (1|2)
+- workstation: cis level: (1|2|NA)
+- CIS_ID: control reference
+- CISv8: list of associated groups the control is associated to
+- CISv8_IG1: Boolean if meets that association
 
 .. code-block:: yaml
 

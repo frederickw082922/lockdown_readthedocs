@@ -22,8 +22,8 @@ Operating Systems
    "Windows-2016-STIG_", "True", "True", "False"
    "Windows-2019-STIG_", "True", "True", "False"
 
-Hardware
-^^^^^^^^^^^^
+Networking
+^^^^^^^^^^
 
 .. csv-table:: STIG Hardware Benchmark availability
    :header: "Benchmark", "Maintained", "Remediate", "Audit"

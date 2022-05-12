@@ -17,10 +17,8 @@ Documentation
    :maxdepth: 2
    :caption: Available Content
 
-   CIS/benchmarks_CIS.rst
-   STIG/stig_benchmarks_STIG.rst
+   CIS/CIS_table.rst
    STIG/STIG_table.rst
-
 
 .. toctree::
    :maxdepth: 2
@@ -33,4 +31,3 @@ Documentation
    :caption: Support
 
    support.rst
-

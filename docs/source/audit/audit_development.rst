@@ -15,36 +15,106 @@ Considerations
 Layout
 ~~~~~~
 
-- Structure should be where appropriate
-- some controls where asociated maybe grouped together
-
-```
-
-  |- control group e.g. section_1
-  |-- grouped controls
-  |---- control test
-
-
-e.g.
-
-```
-
-  |- section_1
-  |-- cis_1.1
-  |--- cis_1.1.x.yml
-
-
 - Each control should be in its own file.
 - Use variables wherever possible
+- some controls where asociated maybe grouped together
+  
+  - Multiple stages tests (config and runnig tests)
+  - Similar tests (filesystem mount options)
+
+- Structure should be where appropriate
+
+.. code-block:: raw
+
+   |- control group e.g. section_1
+   |-- grouped controls
+   |---- control test
+
+**e.g.**
+
+.. code-block:: raw
+
+    |- section_1
+    |-- cis_1.1
+    |--- cis_1.1.x.yml
 
 Content
 """"""""
 
-Each test requires the following to be included
+- Each task requires the following to be included
 
-- title - this needs to be in the format of
+  - Title
+  - At least one control variable (whether control ID is to be run or not).
+    
+    - If only one test add the variable prior to to the goss_module itself
+  
+  - Use appropriate goss_modules before using command
 
-  - title: {benchmark-id} | {benchmark-heading}
+    - There are circumstances when command allows discovery/filters results
+
+For a full list of goss and how to use the goss_modules (tests).
+`Goss Docs <https://github.com/aelsabbahy/goss/blob/master/docs/manual.md>`_
+
+**Example**
+
+*Basic test*
+
+..  code-block:: yaml
+
+    {{ if .Vars.rhel9cis_level_1 }}
+      {{ if .Vars.rhelcis9_1_1_10 }}
+    command:
+      usb-storage:
+        title: 1.1.10 | Disable USB Storage
+        exit-status: 0
+        exec: "modprobe -n -v usb-storage | grep -E '(usb-storage|install)'"
+        stdout: 
+        - install /bin/true
+        meta:
+          server: 1
+          workstation: 2
+          CIS_ID: 1.1.10
+          CISv8: 
+          - 10.3
+          CISv8_IG1: true
+          CISv8_IG2: true
+          CISv8_IG3: true
+      {{ end }}
+    {{ end }}
+
+
+**Breakdown**
+
+..  code-block:: raw
+
+    {{ if .Vars.rhel9cis_level_1 }}                                                     ## if rhel9cis_level_1 is true
+      {{ if .Vars.rhelcis9_1_1_10 }}                                                    ## if rhelcis9_1_1_10 is true
+    command:                                                                            ## goss_module
+      usb-storage:                                                                      ## unique name associated with the command
+        title: 1.1.10 | Disable USB Storage                                             ## title  {{ control id }}| {{ control title }}
+        exit-status: 0                                                                  ## Options for goss_module
+        exec: "modprobe -n -v usb-storage | grep -E '(usb-storage|install)'"            ## Options for goss_module
+        stdout:                                                                         ## Options for goss_module
+        - install /bin/true                                                             ## Options for goss_module
+        meta:                                                                           ## Meta data used for reporting (see metadata)
+          server: 1
+          workstation: 2
+          CIS_ID: 1.1.10
+          CISv8: 
+          - 10.3
+          CISv8_IG1: true
+          CISv8_IG2: true
+          CISv8_IG3: true
+      {{ end }}                                                                         ## Close if statement
+    {{ end }}                                                                           ## Close if statement
+
+**Variable precedence**
+
+The greater impact that a variable has the higher in the test it should be added
+
+.. code-block:: raw
+   {{ .Vars.section_1 }}
+     {{ .Vars.rhelcis8_1_1_1_1 }}
 
 
 Metadata
@@ -57,36 +127,36 @@ It uses two level of metadata
 - control metadata - this is added to every audit control and is specific to each control.
 
 
-**audit metadata** (required)
+**Audit Metadata** (required)
 
   - This is items set/discovered about the system within the script set via vars in the script
   - Referenced in the goss.yml file.
 
 Contains:
 
-- host_machine_uuid: {{ .Vars.machine_uuid }} - discovered UUID of system (used as unique identifier)
-- host_epoch: {{ .Vars.epoch }} - epoch time that script initiated (part of output filename)
-- host_os_locale: {{ .Vars.os_locale }} - system locale (TZ)
-- host_os_release: {{ .Vars.os_release }} - OS version (e.g. 7)
-- host_os_distribution: {{ .Vars.os_distribution }} - OS distribution ( e.g. rhel)
-- host_automation_group: {{ .Vars.auto_group }} 
+..  csv-table:: Discovered audit variables
+    :header: "Variable Title", "Script variable name", "Purpose"
+    :widths: 20, 20, 60
 
-  - If set allows a meta field to be used to group like systems
-  - If run via remediate uses host group memberships
-  - if run via script is an optional value or null
+    "host_machine_uuid:", "{{ .Vars.machine_uuid }}", "discovered UUID of system (used as unique identifier)"
+    "host_epoch:", "{{ .Vars.epoch }}", "epoch time that script initiated (part of output filename)"
+    "host_os_locale:", "{{ .Vars.os_locale }}", "system locale (TZ)"
+    "host_os_release:", "{{ .Vars.os_release }}", "OS version (e.g. 7)"
+    "host_os_distribution:", "{{ .Vars.os_distribution }}", "OS distribution ( e.g. rhel)"
+    "host_hostname:", "{{ .Vars.os_hostname }}", "hostname"
+    "host_system_type:", "{{ .Vars.system_type }}"
+    " ", "Linux", "Server/Workstation Manually set (default server)"
+    " ", "Windows", "pulled from regkey and set"
 
-- host_hostname: {{ .Vars.os_hostname }} - hostname
-- host_system_type: {{ .Vars.system_type }} 
+**Special Variables**
 
-  - Linux server/workstation
-  - Windows (domain_member or standalone or domain_controller) -refer to windows system types
-  
-- benchmark_type: {{ .Vars.benchmark_type }} - CIS or STIG
-- benchmark_version: {{ .Vars.benchmark_version }} - Benchmark version (e.g.0.0)
-- benchmark_os: {{ .Vars.benchmark_os } - Benchmark OS title (e.g. RHEL7)
+- host_automation_group: {{ .Vars.auto_group }}
 
+    - Used to group like systems when reporting
+    - If run via remediate uses host group memberships
+    - If run via script is an optional value or null
 
-**control metadata** (required) 
+**Control Metadata** (required) 
   
   - This consists of data found in the benchmark documentation
   - This potentially changes with each release update (this will need to be correct for the release being worked on)

@@ -42,8 +42,8 @@ Applications
    "Postgres-9-STIG_", "True", "True", "False"
    "Windows_Advance_Firewall-STIG_", "True", "True", "False"
 
-Archived(No Longer Maintained)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Archived
+^^^^^^^^^
 
 .. csv-table:: STIG Retired Benchmark
    :header: "Benchmark", "Maintained", "Remediate", "Audit"

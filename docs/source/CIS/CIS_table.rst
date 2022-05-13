@@ -45,8 +45,8 @@ Applications
    "Kubernetes1.6.1-CIS_", "True", "True", "False"
 
 
-Archived (No Longer Maintained)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Archived 
+^^^^^^^^^
 None currently
 
 .. _AMAZON2-CIS: https://github.com/ansible-lockdown/AMAZON2-CIS

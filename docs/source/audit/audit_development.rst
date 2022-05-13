@@ -18,15 +18,18 @@ Layout
 - Structure should be where appropriate
 - some controls where asociated maybe grouped together
 
-``|- control group e.g. section_1``
-``|-- grouped controls``
-``|---- control test``
+``|- control group e.g. section_1
+  |-- grouped controls
+  |---- control test``
 
 
 **e.g.**
-  ``|- section_1``
-  ``|-- cis_1.1``
-  ``|--- cis_1.1.x.yml``
+
+.. code-block:: raw
+  
+    |- section_1
+    |-- cis_1.1
+    |--- cis_1.1.x.yml
 
 
 - Each control should be in its own file.
@@ -40,6 +43,14 @@ Each test requires the following to be included
 - title - this needs to be in the format of
 
   - title: {benchmark-id} | {benchmark-heading}
+
+test
+""""
+
+Each test should have at least one control (whether control ID is to be run or not).
+
+``{{ .Vars.rhelcis8_1_1_1_1 }}``
+
 
 
 Metadata

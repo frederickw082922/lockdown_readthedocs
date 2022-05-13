@@ -124,7 +124,7 @@ It uses two level of metadata
 
 Contains:
 
-..  csv-table:: STIG Retired Benchmark
+..  csv-table:: Discovered audit variables
     :header: "Variable Title", "Script variable name", "Purpose"
     :widths: 20, 20, 60
 
@@ -132,7 +132,7 @@ Contains:
     "host_epoch:", "{{ .Vars.epoch }}", "epoch time that script initiated (part of output filename)"
     "host_os_locale:", "{{ .Vars.os_locale }}", "system locale (TZ)"
     "host_os_release:", "{{ .Vars.os_release }}", "OS version (e.g. 7)"
-    "host_os_distribution: "{{ .Vars.os_distribution }}", "OS distribution ( e.g. rhel)"
+    "host_os_distribution:", "{{ .Vars.os_distribution }}", "OS distribution ( e.g. rhel)"
     "host_hostname:", "{{ .Vars.os_hostname }}", "hostname"
 
 **Special Variables**

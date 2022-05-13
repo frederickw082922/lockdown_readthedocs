@@ -154,11 +154,6 @@ Contains:
     - If run via remediate uses host group memberships
     - If run via script is an optional value or null
 
-- host_system_type: {{ .Vars.system_type }}
-
-    - Linux server/workstation
-    - Windows (domain_member or standalone or domain_controller) -refer to windows system types
-
 **Control Metadata** (required) 
   
   - This consists of data found in the benchmark documentation

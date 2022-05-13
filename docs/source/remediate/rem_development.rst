@@ -24,20 +24,20 @@ Considerations
   - Scanners also use the Fix Text and/or intent of the control (sometimes the Fix Text has mistakes...)to check for compliance. If you deviate from this scanners find false positives 
   - There should be no extra security settings be set, even if they are a good idea to set. This role has the expectation to only set what is defined in the STIG benchmark which could cause confusion if it sets other settings
 
-Layout
-~~~~~~
+General Layout
+~~~~~~~~~~~~~~
 
 - Each control should be it's own task. If it needs to be multiple tasks create a block for those tasks, see example in Content section
 - Users should not have to edit tasks, but vars in ``defaults/main.yml``. If a control has any variability create a variable for that value
 - Follow the structure listed in the Content section
 
-Content
-~~~~~~~
+Content Layout
+~~~~~~~~~~~~~~
 
 Each test requires the following to be included. The notes blow go with the example
 
-**STIG Specific**
-
+STIG Specific
+^^^^^^^^^^^^^
 - Name (-name:)
   
   - Each control gets it's own task and that task needs a name. The name format is category | STIG ID | PATCH or AUDIT | title of control copied from STIG.

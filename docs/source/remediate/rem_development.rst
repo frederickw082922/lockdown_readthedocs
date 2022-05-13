@@ -11,9 +11,18 @@ and follow the formatting currently in place. We do have a style guide on writin
 Considerations
 ~~~~~~~~~~~~~~
 
-- Keep it as simple as possible to aid investigation and debug
-- Readability is key. This means the most clever way to write something might lead to the task being complicated and hard to read. For example if you have a multi-axis loop, with vars spread across the role that reference tasks of their own, with jinja filters on top of json filters to do something in one task instead of having three tasks to accomplish the same thing, please create the three tasks for readability
-- Ensure it aligns with the remediate portion (the two are intrinsically linked when combined). Controls should only be what the intent of the control asks
+- Keep it as simple as possible
+
+  - This is to aid investigation and debugging. Overly complicated tasks/controls are harder to troubleshoot when things go wrong. 
+- Readability is key
+  
+  - This means the most clever way to write something might lead to the task being complicated and hard to read.
+  - For example if you have a multi-axis loop, with vars spread across the role that reference tasks of their own, with jinja filters on top of json filters to do something in one task instead of having three tasks to accomplish the same thing, please create the three tasks for readability
+- Controls only do what the control ask for
+
+  - Our Audit tool and Remediate are intrinsically linked when combined. Things like variables and how the search is executed in our Audit rely on the Remediate being correct when run from the Remediate playbook
+  - Scanners also use the Fix Text and/or intent of the control (sometimes the Fix Text has mistakes...)to check for compliance. If you deviate from this scanners find false positives 
+  - There should be no extra security settings be set, even if they are a good idea to set. This role has the expectation to only set what is defined in the STIG benchmark which could cause confusion if it sets other settings
 
 Layout
 ~~~~~~
@@ -33,7 +42,7 @@ Each test requires the following to be included. The notes blow go with the exam
   
   - Each control gets it's own task and that task needs a name. The name format is category | STIG ID | PATCH or AUDIT | title of control copied from STIG.
   
-  - PATCH or AUDIT - This is in reference to the task making a change (PATCH) or does not make a change (AUDIT). Tasks that don't make changes are one that generally gather information to be used later
+  - PATCH or AUDIT - This is in reference to the task making a change (PATCH) or not making a change (AUDIT). Tasks that don't make changes are one that generally gather information to be used later
 - Block
   
   - If there are more than one task to complete a control please keep those in a single task but using a block format. 
@@ -53,13 +62,11 @@ Each test requires the following to be included. The notes blow go with the exam
   - When using modules that require a path type of parameter please use that first
   
   - When using modules that regex, please use that second after path where applies
-
 - Registers
 
   - Please adhere to the exiting format of registered variable names
 
   - Dynamic variables are variables set in-line of a task, rhel_08_010382_sudoers_all in the example below. Please follow the all lower case using underscores instead of dashes STIG ID followed by a descriptive name. This helps keep variable names from overlapping in this role or other playbooks/collections you use this role with.
-
 - Variables
 
   - Any value that can deviate from the example used in the STIG fix text. For example tasks that ask to set permissions X or more restrictive that the permissions value should be a variable
@@ -69,13 +76,11 @@ Each test requires the following to be included. The notes blow go with the exam
   - These variables should be defined in the ``defaults/main.yml`` file
 
   - These variables should be formatted as role name followed by the descriptor, rhel8stig_disruption_high for example
-
 - With_items - When using loops please use with_items for consistency. We know ``loop`` has much of the same functionality as ``with_items`` but for consistency we would like ``with_items`` since it covers all uses
 
   - Please use ``loop_control`` on wordy loops
 
   - Please put the loop list below the ``with_items`` like in the example
-
 - When - Please use when statements on all controls
 
   - The control should have the when set to run when the var for the individual task toggle set to true. That toggle is the STIG ID, all lower case with underscores instead of dashes
@@ -85,7 +90,6 @@ Each test requires the following to be included. The notes blow go with the exam
   - When you are inside of the block you can use use single line for ``when`` and value in a single ``when`` instance. If there are and/or whens please stack those under the when
 
   - Please do not use empty compares, if you are basing your task run off an empty var please use | length > 0 or | length == 0.
-
 - Tags
 
   - All controls must have tags, but the individual tasks in the block do not get tags. See the example below for clarification

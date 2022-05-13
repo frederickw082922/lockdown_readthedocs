@@ -24,8 +24,11 @@ Considerations
   - Scanners also use the Fix Text and/or intent of the control (sometimes the Fix Text has mistakes...)to check for compliance. If you deviate from this scanners find false positives 
   - There should be no extra security settings be set, even if they are a good idea to set. This role has the expectation to only set what is defined in the STIG benchmark which could cause confusion if it sets other settings
 
+Layouts
+~~~~~~~
+
 General Layout
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 - Each control should be it's own task. If it needs to be multiple tasks create a block for those tasks, see example in Content section
 - Users should not have to edit tasks, but vars in ``defaults/main.yml``. If a control has any variability create a variable for that value

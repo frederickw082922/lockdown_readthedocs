@@ -31,13 +31,9 @@ General Layout
 - Users should not have to edit tasks, but vars in ``defaults/main.yml``. If a control has any variability create a variable for that value
 - Follow the structure listed in the Content section
 
-Content Layout
-~~~~~~~~~~~~~~
+STIG Control Task Layout
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Each test requires the following to be included. The notes blow go with the example
-
-STIG Specific
-^^^^^^^^^^^^^
 - Name (-name:)
   
   - Each control gets it's own task and that task needs a name. The name format is category | STIG ID | PATCH or AUDIT | title of control copied from STIG.

@@ -1,15 +1,15 @@
 How to contribute to remediate development
 ------------------------------------------
 
-Remediate code
-~~~~~~~~~~~~~~
+Remediate Code Summary
+~~~~~~~~~~~~~~~~~~~~~~
 
 We are trying to maintain a set of standards and consistency for all code that is written. Please review the formatting of previously written controls
 and follow the formatting currently in place. We do have a style guide on writing controls that document standard linting, parameter use/order, tagging, etc. 
 
 
-Considerations
-~~~~~~~~~~~~~~
+Remediate Code Considerations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Keep it as simple as possible
 
@@ -24,8 +24,8 @@ Considerations
   - Scanners also use the Fix Text and/or intent of the control (sometimes the Fix Text has mistakes...)to check for compliance. If you deviate from this scanners find false positives 
   - There should be no extra security settings be set, even if they are a good idea to set. This role has the expectation to only set what is defined in the STIG benchmark which could cause confusion if it sets other settings
 
-Code Layout
-~~~~~~~~~~~
+Remediate Code Layout
+~~~~~~~~~~~~~~~~~~~~~
 
 General Layout
 ^^^^^^^^^^^^^^

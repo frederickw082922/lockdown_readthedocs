@@ -102,8 +102,6 @@ Basic test
 
 The greater impact that a variable has the higher in the test it should be added
 
-e.g.
-
 .. code-block:: raw
    {{ .Vars.section_1 }}
      {{ .Vars.rhelcis8_1_1_1_1 }}
@@ -126,27 +124,26 @@ It uses two level of metadata
 
 Contains:
 
-- host_machine_uuid: {{ .Vars.machine_uuid }} - discovered UUID of system (used as unique identifier)
-- host_epoch: {{ .Vars.epoch }} - epoch time that script initiated (part of output filename)
-- host_os_locale: {{ .Vars.os_locale }} - system locale (TZ)
-- host_os_release: {{ .Vars.os_release }} - OS version (e.g. 7)
-- host_os_distribution: {{ .Vars.os_distribution }} - OS distribution ( e.g. rhel)
-- host_automation_group: {{ .Vars.auto_group }} 
+..  csv-table:: STIG Retired Benchmark
+    :header: "Variable Title", "Script variable name", "Purpose"
+    :widths: 20, 20, 60
 
-  - If set allows a meta field to be used to group like systems
-  - If run via remediate uses host group memberships
-  - if run via script is an optional value or null
+    "host_machine_uuid:", "{{ .Vars.machine_uuid }}", "discovered UUID of system (used as unique identifier)"
+    "host_epoch:", "{{ .Vars.epoch }}", "epoch time that script initiated (part of output filename)"
+    "host_os_locale:", "{{ .Vars.os_locale }}", "system locale (TZ)"
+    "host_os_release:", "{{ .Vars.os_release }}", "OS version (e.g. 7)"
+    "host_os_distribution: "{{ .Vars.os_distribution }}", "OS distribution ( e.g. rhel)"
+    "host_hostname:", "{{ .Vars.os_hostname }}", "hostname"
 
-- host_hostname: {{ .Vars.os_hostname }} - hostname
-- host_system_type: {{ .Vars.system_type }} 
+**Special Variables**
+- host_automation_group: {{ .Vars.auto_group }}
+    - "If set allows a meta field to be used to group like systems"
+    - "If run via remediate uses host group memberships"
+    - "if run via script is an optional value or null"
 
-  - Linux server/workstation
-  - Windows (domain_member or standalone or domain_controller) -refer to windows system types
-  
-- benchmark_type: {{ .Vars.benchmark_type }} - CIS or STIG
-- benchmark_version: {{ .Vars.benchmark_version }} - Benchmark version (e.g.0.0)
-- benchmark_os: {{ .Vars.benchmark_os } - Benchmark OS title (e.g. RHEL7)
-
+- "host_system_type:", "{{ .Vars.system_type }}"
+    - Linux server/workstation
+    - Windows (domain_member or standalone or domain_controller) -refer to windows system types
 
 **control metadata** (required) 
   

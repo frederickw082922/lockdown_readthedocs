@@ -30,10 +30,13 @@ Remediate Code Layout
 General Layout
 ^^^^^^^^^^^^^^
 
-- Each control should be it's own task. If it needs to be multiple tasks create a block for those tasks, see example in Content section
+- Each control should be it's own task. If it needs to be multiple tasks create a block for those tasks, see example in the Layout sections
 - Users should not have to edit tasks, but vars in ``defaults/main.yml``. If a control has any variability create a variable for that value
-- Follow the structure listed in the Content section
-- For controls that install/uninstall packages please use package module and use ansible_facts.packages in the when. The use of ansible_facts.packages will skip if it does not need to run and add efficiency to run time
+- Follow the structure listed in the Layout sections
+- For controls that install/uninstall packages please use package module and use ansible_facts.packages in the when
+
+  - The package module will use whatever package manager is the default for that system, for example yum (RHEL 7), dnf (RHEL 8+), apt (Ubuntu), etc. This allows for a more unified use of tasks between all roles
+  - The use of ansible_facts.packages will skip if it does not need to run and add efficiency to run time
 
 STIG Control Task Layout
 ^^^^^^^^^^^^^^^^^^^^^^^^

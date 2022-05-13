@@ -24,8 +24,8 @@ Considerations
   - Scanners also use the Fix Text and/or intent of the control (sometimes the Fix Text has mistakes...)to check for compliance. If you deviate from this scanners find false positives 
   - There should be no extra security settings be set, even if they are a good idea to set. This role has the expectation to only set what is defined in the STIG benchmark which could cause confusion if it sets other settings
 
-Layouts
-~~~~~~~
+Code Layout
+~~~~~~~~~~~
 
 General Layout
 ^^^^^^^^^^^^^^

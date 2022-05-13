@@ -142,6 +142,9 @@ Contains:
     "host_os_release:", "{{ .Vars.os_release }}", "OS version (e.g. 7)"
     "host_os_distribution:", "{{ .Vars.os_distribution }}", "OS distribution ( e.g. rhel)"
     "host_hostname:", "{{ .Vars.os_hostname }}", "hostname"
+    "host_system_type:", "{{ .Vars.system_type }}"
+    "Linux - Server/Workstation Manually set (default server)"
+    "Windows - pulled from regkey and set"
 
 **Special Variables**
 

@@ -35,7 +35,7 @@ General Layout
 - Follow the structure listed in the Layout sections
 - For controls that install/uninstall packages please use package module and use ansible_facts.packages in the when
 
-  - The package module will use whatever package manager is the default for that system, for example yum (RHEL 7), dnf (RHEL 8+), apt (Ubuntu), etc. This allows for a more unified use of tasks between all roles
+  - The package module will use the default package manager for that system, for example yum (RHEL 7), dnf (RHEL 8+), apt (Ubuntu), etc. This allows for a more unified use of tasks between all roles
   - The use of ansible_facts.packages will skip if it does not need to run and add efficiency to run time
 
 STIG Control Task Layout

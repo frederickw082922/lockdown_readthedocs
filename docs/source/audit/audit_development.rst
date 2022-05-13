@@ -18,20 +18,15 @@ Layout
 - Structure should be where appropriate
 - some controls where asociated maybe grouped together
 
-```
-
-  |- control group e.g. section_1
-  |-- grouped controls
-  |---- control test
+``|- control group e.g. section_1``
+``|-- grouped controls``
+``|---- control test``
 
 
-e.g.
-
-```
-
-  |- section_1
-  |-- cis_1.1
-  |--- cis_1.1.x.yml
+**e.g.**
+  ``|- section_1``
+  ``|-- cis_1.1``
+  ``|--- cis_1.1.x.yml``
 
 
 - Each control should be in its own file.

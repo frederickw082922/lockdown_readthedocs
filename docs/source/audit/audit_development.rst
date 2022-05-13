@@ -15,8 +15,14 @@ Considerations
 Layout
 ~~~~~~
 
-- Structure should be where appropriate
+- Each control should be in its own file.
+- Use variables wherever possible
 - some controls where asociated maybe grouped together
+  
+  - Multiple stages tests (config and runnig tests)
+  - Similar tests (filesystem mount options)
+
+- Structure should be where appropriate
 
 .. code-block:: raw
 
@@ -32,10 +38,6 @@ Layout
     |-- cis_1.1
     |--- cis_1.1.x.yml
 
-
-- Each control should be in its own file.
-- Use variables wherever possible
-
 Content
 """"""""
 
@@ -50,12 +52,12 @@ Content
 
     - There are circumstances when command allows discovery/filters results
 
-For a full list of goss and how to use the goss_modules(tests)
+For a full list of goss and how to use the goss_modules (tests).
 `Goss Docs <https://github.com/aelsabbahy/goss/blob/master/docs/manual.md>`_
 
-Example
+**Example**
 
-Basic test
+*Basic test*
 
 ..  code-block:: yaml
 
@@ -94,7 +96,7 @@ Basic test
         exec: "modprobe -n -v usb-storage | grep -E '(usb-storage|install)'"            ## Options for goss_module
         stdout:                                                                         ## Options for goss_module
         - install /bin/true                                                             ## Options for goss_module
-        meta:                                                                           ## Meta data used for reporting ( see metadata)
+        meta:                                                                           ## Meta data used for reporting (see metadata)
           server: 1
           workstation: 2
           CIS_ID: 1.1.10
@@ -143,8 +145,8 @@ Contains:
     "host_os_distribution:", "{{ .Vars.os_distribution }}", "OS distribution ( e.g. rhel)"
     "host_hostname:", "{{ .Vars.os_hostname }}", "hostname"
     "host_system_type:", "{{ .Vars.system_type }}"
-    "Linux - Server/Workstation Manually set (default server)"
-    "Windows - pulled from regkey and set"
+    " ", "Linux", "Server/Workstation Manually set (default server)"
+    " ", "Windows", "pulled from regkey and set"
 
 **Special Variables**
 

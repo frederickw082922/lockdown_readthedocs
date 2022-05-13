@@ -146,7 +146,7 @@ STIG Control Task Layout
 
 
 CIS Control Task Layout
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^
 
 - Name (- name:)
 

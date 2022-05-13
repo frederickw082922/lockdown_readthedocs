@@ -10,6 +10,12 @@ standalone role or it can be used along with other Ansible roles, playbooks, or 
    :local:
    :backlinks: none
 
+.. warning::
+
+    It is strongly recommended to run the role in a test environment first. There are controls that could introduce
+    breaking changes. Check mode might not always catch these changes. The best way to confirm how the role will change
+    your system is to fully test. 
+
 Requirements
 ------------
 This documentation assumes that the reader has completed the steps within the
@@ -25,13 +31,6 @@ and has a good understanding of using ansible
     The role requires elevated privileges and must be run as a user with ``sudo``
     access. The example above uses the ``become`` option, which causes Ansible to use
     sudo before running tasks.
-
-.. warning::
-
-    It is strongly recommended to run the role in a test environment first. There are controls that could introduce
-    breaking changes. Check mode might not always catch these changes. The best way to confirm how the role will change
-    your system is to fully test. 
-
 
 Installation
 ------------

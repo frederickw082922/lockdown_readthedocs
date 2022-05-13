@@ -18,15 +18,16 @@ Layout
 - Structure should be where appropriate
 - some controls where asociated maybe grouped together
 
-``|- control group e.g. section_1
-  |-- grouped controls
-  |---- control test``
+.. code-block:: raw
 
+   |- control group e.g. section_1
+   |-- grouped controls
+   |---- control test
 
 **e.g.**
 
 .. code-block:: raw
-  
+
     |- section_1
     |-- cis_1.1
     |--- cis_1.1.x.yml
@@ -38,19 +39,74 @@ Layout
 Content
 """"""""
 
-Each test requires the following to be included
+- Each task requires the following to be included
 
-- title - this needs to be in the format of
+  - Title
+  - At least one control variable (whether control ID is to be run or not).
+    - If only one test add the variable prior to to the goss_module itself
 
-  - title: {benchmark-id} | {benchmark-heading}
+Example
 
-test
-""""
+Basic test
 
-Each test should have at least one control (whether control ID is to be run or not).
+..  code-block:: yaml
 
-``{{ .Vars.rhelcis8_1_1_1_1 }}``
+    {{ if .Vars.rhel9cis_level_1 }}
+      {{ if .Vars.rhelcis9_1_1_10 }}
+    command:
+      usb-storage:
+        title: 1.1.10 | Disable USB Storage
+        exit-status: 0
+        exec: "modprobe -n -v usb-storage | grep -E '(usb-storage|install)'"
+        stdout: 
+        - install /bin/true
+        meta:
+          server: 1
+          workstation: 2
+          CIS_ID: 1.1.10
+          CISv8: 
+          - 10.3
+          CISv8_IG1: true
+          CISv8_IG2: true
+          CISv8_IG3: true
+      {{ end }}
+    {{ end }}
 
+
+**Breakdown**
+
+..  code-block:: raw
+
+    {{ if .Vars.rhel9cis_level_1 }}                                                     ## if rhel9cis_level_1 is true
+      {{ if .Vars.rhelcis9_1_1_10 }}                                                    ## if rhelcis9_1_1_10 is true
+    command:                                                                            ## goss_module
+      usb-storage:                                                                      ## unique name associated with the command
+        title: 1.1.10 | Disable USB Storage                                             ## title  {{ control id }}| {{ control title }}
+        exit-status: 0                                                                  ## Options for goss_module
+        exec: "modprobe -n -v usb-storage | grep -E '(usb-storage|install)'"            ## Options for goss_module
+        stdout:                                                                         ## Options for goss_module
+        - install /bin/true                                                             ## Options for goss_module
+        meta:                                                                           ## Meta data used for reporting ( see metadata)
+          server: 1
+          workstation: 2
+          CIS_ID: 1.1.10
+          CISv8: 
+          - 10.3
+          CISv8_IG1: true
+          CISv8_IG2: true
+          CISv8_IG3: true
+      {{ end }}
+    {{ end }}
+
+**Variable precedence**
+
+The greater impact that a variable has the higher in the test it should be added
+
+e.g.
+
+.. code-block:: raw
+   {{ .Vars.section_1 }}
+     {{ .Vars.rhelcis8_1_1_1_1 }}
 
 
 Metadata

@@ -10,7 +10,7 @@ Terms used through the documentation
 Audit
 -----
 
-**test** - this is test that is carried out to check the related control
+**goss_test** - this is name of the module that is carried out to check the related control
 
 Remediation
 -----------

@@ -53,7 +53,7 @@ STIG Control Task Layout
   - This is just the module being used to execute that task, nothing special here
 - Parameters
   
-  - When using ``command`` or ``shell`` modules to gather information please set ``changed_when`` and ``failed_when`` to false. This will cause the task to always run and register which always creates the variable registering. The action parts of the task that use that var should handle the var if a fail occured during the ``command`` or ``shell`` function
+  - When using the ``shell`` module to gather information please set ``changed_when`` and ``failed_when`` to false. This will cause the task to always run and register which always creates the variable registering. The action parts of the task that use that var should handle the var if a fail occured during the ``command`` or ``shell`` function
   
     - Please always use ``shell`` over ``command``. The ``command`` module is being phased out, but also for consistency please use ``shell``
   
@@ -160,7 +160,7 @@ CIS Control Task Layout
   - This is just the module being used to execute that task, nothing special here
 - Parameters
   
-  - When using ``command`` or ``shell`` modules to gather information please set ``changed_when`` and ``failed_when`` to false. This will cause the task to always run and register which always creates the variable registering. The action parts of the task that use that var should handle the var if a fail occured during the ``command`` or ``shell`` function
+  - When using the ``shell`` module to gather information please set ``changed_when`` and ``failed_when`` to false. This will cause the task to always run and register which always creates the variable registering. The action parts of the task that use that var should handle the var if a fail occured during the ``command`` or ``shell`` function
   
     - Please always use ``shell`` over ``command``. The ``command`` module is being phased out, but also for consistency please use ``shell``
   

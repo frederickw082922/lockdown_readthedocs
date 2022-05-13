@@ -173,7 +173,7 @@ CIS Control Task Layout
 
   - Please adhere to the exiting format of registered variable names
 
-  - Dynamic variables are variables set in-line of a task, rhel_08_010382_sudoers_all in the example below. Please follow the all lower case using underscores instead of dashes STIG ID followed by a descriptive name. This helps keep variable names from overlapping in this role or other playbooks/collections you use this role with.
+  - Dynamic variables are variables set in-line of a task, rhel8cis_4_1_1_1_3_grub_cmdline_linux in the example below. Please follow the all lower case standard using underscores instead of periods/dots with benchmark name followed by the CIS control number and finally a descriptive name. This helps keep variable names from overlapping in this role or other playbooks/collections you use this role with.
 - Variables
 
   - Any value that can deviate from the example used in the STIG fix text. For example tasks that ask to set permissions X or more restrictive that the permissions value should be a variable

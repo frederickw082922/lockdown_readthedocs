@@ -43,7 +43,15 @@ Content
 
   - Title
   - At least one control variable (whether control ID is to be run or not).
+    
     - If only one test add the variable prior to to the goss_module itself
+  
+  - Use appropriate goss_modules before using command
+
+    - There are circumstances when command allows discovery/filters results
+
+For a full list of goss and how to use the goss_modules(tests)
+`Goss Docs <https://github.com/aelsabbahy/goss/blob/master/docs/manual.md>`_
 
 Example
 
@@ -95,8 +103,8 @@ Basic test
           CISv8_IG1: true
           CISv8_IG2: true
           CISv8_IG3: true
-      {{ end }}
-    {{ end }}
+      {{ end }}                                                                         ## Close if statement
+    {{ end }}                                                                           ## Close if statement
 
 **Variable precedence**
 
@@ -117,7 +125,7 @@ It uses two level of metadata
 - control metadata - this is added to every audit control and is specific to each control.
 
 
-**audit metadata** (required)
+**Audit Metadata** (required)
 
   - This is items set/discovered about the system within the script set via vars in the script
   - Referenced in the goss.yml file.
@@ -136,16 +144,19 @@ Contains:
     "host_hostname:", "{{ .Vars.os_hostname }}", "hostname"
 
 **Special Variables**
-- host_automation_group: {{ .Vars.auto_group }}
-    - "If set allows a meta field to be used to group like systems"
-    - "If run via remediate uses host group memberships"
-    - "if run via script is an optional value or null"
 
-- "host_system_type:", "{{ .Vars.system_type }}"
+- host_automation_group: {{ .Vars.auto_group }}
+
+    - Used to group like systems when reporting
+    - If run via remediate uses host group memberships
+    - If run via script is an optional value or null
+
+- host_system_type: {{ .Vars.system_type }}
+
     - Linux server/workstation
     - Windows (domain_member or standalone or domain_controller) -refer to windows system types
 
-**control metadata** (required) 
+**Control Metadata** (required) 
   
   - This consists of data found in the benchmark documentation
   - This potentially changes with each release update (this will need to be correct for the release being worked on)

@@ -1,6 +1,9 @@
 Audit
 ==========================
 
+.. contents::
+   :local:
+   :backlinks: none
 
 Overview
 --------

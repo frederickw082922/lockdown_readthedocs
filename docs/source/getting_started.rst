@@ -1,16 +1,3 @@
-General considerations
-======================
-
-
-It is highly advised to test on non-production or service affecting systems in order to alighn the configurable settings
-to those required for the systems these are to be run against.
-
-.. note::
-
-
-    **TEST**
-        Some remediation settings could cause a system to become unusable
-
 
 .. toctree::
    :maxdepth: 2

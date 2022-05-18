@@ -240,6 +240,7 @@ e.g.
 and also
 
 ..  code-block:: yaml
+
   file:
   /etc/selinux/config:
     title: 1.6.1.5 | Ensure the SELinux mode is enforcing | config

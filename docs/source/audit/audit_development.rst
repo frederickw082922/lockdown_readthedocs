@@ -24,7 +24,7 @@ Layout
 
 - Structure should be where appropriate
 
-.. code-block:: raw
+..  code-block:: raw
 
    |- control group e.g. section_1
    |-- grouped controls
@@ -32,7 +32,7 @@ Layout
 
 **e.g.**
 
-.. code-block:: raw
+..  code-block:: raw
 
     |- section_1
     |-- cis_1.1
@@ -112,9 +112,9 @@ For a full list of goss and how to use the goss_modules (tests).
 
 The greater impact that a variable has the higher in the test it should be added
 
-.. code-block:: raw
-   {{ .Vars.section_1 }}
-     {{ .Vars.rhelcis8_1_1_1_1 }}
+..  code-block:: raw
+    {{ .Vars.section_1 }}
+      {{ .Vars.rhelcis8_1_1_1_1 }}
 
 
 Metadata
@@ -152,9 +152,9 @@ Contains:
 
 - host_automation_group: {{ .Vars.auto_group }}
 
-    - Used to group like systems when reporting
-    - If run via remediate uses host group memberships
-    - If run via script is an optional value or null
+  - Used to group like systems when reporting
+  - If run via remediate uses host group memberships
+  - If run via script is an optional value or null
 
 **Control Metadata** (required) 
   
@@ -171,7 +171,7 @@ This contains the following:
 - CISv8: list of associated groups the control is associated to
 - CISv8_IG1: Boolean if meets that association
 
-.. code-block:: yaml
+..  code-block:: yaml
 
     meta:
       server: 1
@@ -194,7 +194,7 @@ All can be found in the details of the control itself
 - STIG_ID: control id as known by STIG
 - Vul_ID: vulnernability identifier
 
-.. code-block:: yaml
+..  code-block:: yaml
 
     meta:
       Cat: 1
@@ -207,3 +207,56 @@ All can be found in the details of the control itself
       Rule_ID: SV-204392r646841_rule
       STIG_ID: RHEL-07-010010
       Vul_ID: V-204392
+
+Gotchas
+~~~~~~~
+
+if you have two tasks that refer to the same file or command.
+This is currently the unique identifier as used in goss.
+It will only give you the result of one test (the last one to run).
+
+e.g.
+
+..  code-block:: yaml
+
+   file:
+    /etc/selinux/config:
+      title: 1.6.1.4 | Ensure the SELinux mode is not disabled | config
+      exists: true
+      contains:
+      - '/^SELINUX( |)=( |)(enforcing|permissive)/'
+      - '!/^SELINUX( |)=( |)disabled/'
+      meta:
+        server: 1
+        workstation: 1
+        CIS_ID: 
+        - 1.6.1.4
+        CISv8: 
+        - 3.3
+        CISv8_IG1: true
+        CISv8_IG2: true
+        CISv8_IG3: true
+
+and also
+
+..  code-block:: yaml
+  file:
+  /etc/selinux/config:
+    title: 1.6.1.5 | Ensure the SELinux mode is enforcing | config
+    exists: true
+    contains:
+    - '/^SELINUX( |)=( |)enforcing/'
+    - '!/^SELINUX( |)=( |)disabled/'
+    meta:
+      server: 2
+      workstation: 2
+      CIS_ID: 
+      - 1.6.1.5
+      CISv8: 
+      - 3.3
+      CISv8_IG1: true
+      CISv8_IG2: true
+      CISv8_IG3: true
+
+**Only one will give you results**
+

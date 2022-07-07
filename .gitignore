@@ -3,7 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks
 
 ## OS
-.DS_Store/
+.DS_Store
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks

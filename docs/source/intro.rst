@@ -96,3 +96,35 @@ Additionally, the items that have configurable values, i.e. number of password a
 customization of the applied value.
 It is imperative for each deployer to understand the regulations and compliance requirements that their organization and specific 
 environments are responsible for meeting in order to effeectively implement the controls in the relevant benchmark.
+
+Development Process
+-------------------
+
+Branches
+^^^^^^^^
+
+- devel - This is the default branch and the working development branch. Community pull requests will pull into this branch
+- main - This is the release branch
+
+lifecycle of releases
+^^^^^^^^^^^^^^^^^^^^^
+
+While Remediate and Audit are managed individually some of the content is linked. Ther are occasions where both need updating or just one of them.
+
+As a general rule we try to abide to the following lifecycle process for branches and releases inclduing ansible-galaxy sync updates. Being community we do have direct customer requests
+and requirements will take priority in releases.
+
+
+- devel branch release
+  - Updates - bug fixes PRs etc
+
+    We aim to get the majority merged to devel in 2-4 weeks.
+
+- Main branch release
+  - New benchmark version release
+
+    We aim to carry the initial update in around 4 weeks.
+
+  - merge of devel for updates
+
+    This is dependant on the severity and impact of issues closed. Normally a release alignment every 8-12 weeks (sometimes much quicker)

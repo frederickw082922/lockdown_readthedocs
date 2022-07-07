@@ -106,8 +106,8 @@ Branches
 - devel - This is the default branch and the working development branch. Community pull requests will pull into this branch
 - main - This is the release branch
 
-lifecycle of releases
-^^^^^^^^^^^^^^^^^^^^^
+Lifecycle of releases and branches
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 While Remediate and Audit are managed individually some of the content is linked. Ther are occasions where both need updating or just one of them.
 

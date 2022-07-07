@@ -103,8 +103,10 @@ Development Process
 Branches
 ^^^^^^^^
 
-- devel - This is the default branch and the working development branch. Community pull requests will pull into this branch
-- main - This is the release branch
+- devel 
+  - This is the default branch and the working development branch. Community pull requests will pull into this branch
+- main 
+  - This is the release branch
 
 Lifecycle of releases and branches
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -115,16 +117,19 @@ As a general rule we try to abide to the following lifecycle process for branche
 and requirements will take priority in releases.
 
 
-- devel branch release
-  - Updates - bug fixes PRs etc
+- devel branch
+  - Staging area for bug fixes PRs and new benchmarks.
 
-    We aim to get the majority merged to devel in 2-4 weeks.
+    We aim to get the majority of PRs merged to devel in 2-4 weeks.
 
-- Main branch release
-  - New benchmark version release
-
-    We aim to carry the initial update in around 4 weeks.
-
-  - merge of devel for updates
+- Main branch
+  - Merge of devel in to main.
 
     This is dependant on the severity and impact of issues closed. Normally a release alignment every 8-12 weeks (sometimes much quicker)
+
+  - New benchmark version release.
+
+    Once a new benchmark has been released by the provider we aim to get to a new tagged release in 2-4 weeks
+
+  - This is also the where the releases are sourced and linked with ansible-galaxy.
+

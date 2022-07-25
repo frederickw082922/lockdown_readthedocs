@@ -10,7 +10,7 @@ Advanced Options
 
 - auditd_exclusion:
 
-audit can fill up very quickly with the defaul CIS options to log every privileged commands.
+auditd logs can fill up very quickly with the defaul CIS options to log every privileged commands.
 Whether scanners/automation or and job that needs to run against a system with privilege access. e.g.sudo
 
 There is the ability to change this for specific users to exclude anythnig in user space.
@@ -18,7 +18,8 @@ This will still capture login/logout and sshd process but anything else will be 
 This can be enabled with the following (this need to be set in alternate variable location)
 
 .. code-block:: console
-allow_auditd_uid_user_exclusions: true
+
+   allow_auditd_uid_user_exclusions: true
 
 
 Then a list of applicable users can be added to the exclusions.
@@ -26,7 +27,8 @@ e.g.
 
 
 .. code-block:: console
-rhel8cis_auditd_uid_exclude:
-    - ansible
-    - vagrant
+
+   rhel8cis_auditd_uid_exclude:
+   - ansible
+   - vagrant
 

@@ -18,6 +18,7 @@ Documentation
    :caption: Available Content
 
    CIS/CIS_table.rst
+   CIS/CIS_advanced.rst
    STIG/STIG_table.rst
 
 .. toctree::

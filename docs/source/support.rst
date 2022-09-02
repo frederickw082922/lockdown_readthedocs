@@ -9,6 +9,7 @@ Need to put content here
 .. toctree::
    :maxdepth: 3
 
+   known_issues.rst
    audit/audit-faq.rst
    remediate/rem-faq.rst
    links.rst
